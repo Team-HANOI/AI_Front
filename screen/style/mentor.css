@@ -45,11 +45,11 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    
 }
 
 .nav .nav-sub {
     display: flex;
-    list-style: none;
 }
 
 .nav .nav-sub li {
@@ -98,8 +98,9 @@ main {
 /* 메인화면 게시판 스타일 */
 ul { 
     overflow: hidden; 
-    }
+}
 li {
+    list-style: none;
     float: left;
     margin: 10px; 
     width: calc(25% - 20px); 
@@ -121,7 +122,9 @@ li:nth-child(4) .mentor-cover {
     height: 500px;
     background: rgb(245, 182, 182);
 }
-
+.mentor-item:hover{
+	transform: scale(0.95);
+}
 .mentor-cover {
   width: 100%;
   height: 300px;
