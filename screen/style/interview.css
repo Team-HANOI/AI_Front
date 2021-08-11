@@ -87,6 +87,27 @@ main {
     bottom: 10px;
     color: #fff;
 }
+.mode .top_left:hover{
+    transform: scale(1.05);
+    text-decoration: none;
+    background-color: rgb(245, 182, 182);
+}
+.mode .top_right:hover{
+    transform: scale(1.05);
+    text-decoration: none;
+    background-color: rgb(245, 182, 182);
+}
+
+.mode .bottom_left:hover{
+    transform: scale(1.05);
+    text-decoration: none;
+    background-color: rgb(245, 182, 182);
+}
+.mode .bottom_left:hover{
+    transform: scale(1.05);
+    text-decoration: none;
+    background-color: rgb(245, 182, 182);
+}
 .mode{
     /* display: flex;
     flex-direction : row ;
