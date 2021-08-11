@@ -1,0 +1,13 @@
+/* 모범답안 스타일 */
+
+.write {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.write-text:nth-of-type(2) {
+    height: 300px;
+    margin-bottom: 10xp;
+}
+

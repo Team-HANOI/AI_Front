@@ -1,0 +1,29 @@
+/* 모범답안 스타일 */
+
+.recommendations {
+    width: 1000px;
+    margin: 50px auto 0;
+    list-style: none;
+}
+
+.recommendations li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+}
+
+.recommendations li .recommendations-user_icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.recommendations li .recommendations-count {
+    position: absolute;
+    right: 10px;
+}
+
+
+
+

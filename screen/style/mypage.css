@@ -1,0 +1,110 @@
+/* 프로파일 컨테이터 스타일 */
+.mypage {
+    height: 1000px;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    border: 1px solid #333;
+}
+
+/* 프로파일 좌측 메뉴 스타일 */
+.mypage .mypage-left {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border-right: 1px solid #333;
+}
+
+.mypage .mypage-left .mypage-left-top {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mypage .mypage-left .mypage-left-top .mypage-level {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mypage .mypage-left .mypage-left-top .mypage-left-mark-initial {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.mypage .mypage-left .mypage-left-bottom ul {
+    list-style: none;
+}
+
+.mypage .mypage-left .mypage-left-bottom ul li {
+    margin: 10px 0 10px;
+    padding-left: 20px;
+}
+
+.mypage .mypage-left .mypage-left-bottom a {
+    text-decoration: none;
+}
+
+/* 프로파일 우측 정보란 스타일 */
+.mypage-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    text-align: right;
+}
+
+.mypage-right .mypage-content-title {
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mypage-right .mypage-content-subtitle {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.mypage-right .mypage-content {
+    height: 100%;
+}
+
+.mypage-right .mypage-content .mypage-content-input {
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0 10px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+}
+
+.mypage-right .mypage-content .mypage-content-btn {
+    height: 50px;
+    width: 80px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: 1px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+

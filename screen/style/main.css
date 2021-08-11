@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --bs-color-blue: #0d6efd;
+    --bs-color-indigo: #6610f2;
+    --bs-color-purple: #6f42c1;
+    --bs-color-pink: #d63384;
+    --bs-color-red: #dc3545;
+    --bs-color-orange: #fd7e14;
+    --bs-color-yellow: #ffc107;
+    --bs-color-green: #198754;
+    --bs-color-teal: #20c997;
+    --bs-color-cyan: #0dcaf0;
+    --bs-color-white: #fff;
+    --bs-color-gray: #6c757d;
+    --bs-color-gray-dark: #343a40;
+    --bs-color-primary: #0d6efd;
+    --bs-color-secondary: #6c757d;
+    --bs-color-success: #198754;
+    --bs-color-info: #0dcaf0;
+    --bs-color-warning: #ffc107;
+    --bs-color-danger: #dc3545;
+    --bs-color-light: #f8f9fa;
+    --bs-color-dark: #212529;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'poppins', sans-serif, serif;
+}
+
+/* 머리말 스타일 */
+header {
+    height: 150px;
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav .nav-sub {
+    display: flex;
+    list-style: none;
+}
+
+.nav .nav-sub li {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.nav .nav-sub a {
+    text-decoration: none;
+}
+
+/* 본문 스타일  */
+main {
+    min-height: 1000px;
+}
+
+.title {
+    height: 300px;
+    background-image: url('/image/austria.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+}
+
+.title-text {
+    position: absolute;
+    right: 120px;
+    bottom: 50px;
+    color: #fff;
+}
+
+.intro {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 메인화면 게시판 스타일 */
+.board {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-table {
+    border-collapse: collapse;
+}
+
+.board .board-table tr {
+    margin: 50px 0;
+}
+
+.board .board-table th {
+    padding: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.board .board-table th, td {
+    padding: 10px;
+}
+
+/* 꼬리 스타일 */
+footer {
+    padding: 20px;
+    height: 300px;
+    background-color: rgb(214, 202, 202);
+    text-align: center;
+}
+
+footer p {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.developers {
+    margin: 20px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.developers a {
+    text-decoration: none;
+}
+
+.developers .developers-git {
+    margin-bottom: 10px;
+}
+
+.developers .developers-id {
+    width: 100px;
+    font-size: .9rem;
+}
+
+/* 구분선 */
+.line {
+    height: 1px;
+    width: 95%;
+    margin: 10px auto;
+    background-color: rgb(236, 94, 12);
+    border: none;
+}

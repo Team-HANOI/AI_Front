@@ -1,0 +1,70 @@
+/* 모범답안 스타일 */
+
+.best-answer {
+    width: 1000px;
+}
+
+.answer {
+    position: relative;
+    min-height: 400px;
+}
+
+.answer .recommend {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.replies {
+    display: flex;
+    flex-direction: column;
+}
+
+.best-answer .reply {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.best-answer .reply .reply-img {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.best-answer .reply .reply-img {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.best-answer .reply .reply-text {
+    margin-right: 20px;
+}
+
+.best-answer .reply .reply-id {
+    margin-right: 20px;
+}
+
+.write {
+    display: flex;
+    margin-top: 5px;
+}
+
+.write-icon {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.write-text {
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid #444;
+    padding-left: 10px;
+}
+
+.write-btn {
+    width: 5%;
+}

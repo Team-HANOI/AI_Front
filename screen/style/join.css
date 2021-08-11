@@ -1,0 +1,37 @@
+.join {
+    height: 700px;
+    width: 550px;
+}
+
+.join-title {
+    margin-bottom: 10px;
+}
+
+.login-sub label {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.login-input {
+    width: 100%;
+}
+
+.join-check {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.join-check:last-of-type {
+    margin-bottom: 5px;
+}
+
+.join-check input {
+    margin-right: 5px;
+}
+
+.login-text a {
+    text-decoration: none;
+}

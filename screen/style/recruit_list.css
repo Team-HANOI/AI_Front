@@ -1,0 +1,47 @@
+/* 채용공고 스타일 */
+.recruit-list {
+    text-align: center;
+}
+
+.recruit {
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recruit .recruit-box {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    border: solid #000;
+    margin: 10px;
+}
+
+.recruit .recruit-box .recruit-img {
+    height: 100px;
+    width: 100px;
+}
+
+.recruit .recruit-box .recruit-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recruit .recruit-box .recruit-info .recruit-decription {
+    padding-left: 10px;
+}
+
+.recruit .recruit-box .recruit-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recruit .recruit-box .recruit-skills .skill {
+    margin: 10px;
+}
