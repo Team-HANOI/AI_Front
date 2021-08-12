@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gowun+Dodum&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Comfortaa:wght@700&family=Do+Hyeon&family=Gowun+Dodum&family=Permanent+Marker&display=swap');
+
+/* backups */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Gowun+Dodum&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Comfortaa:wght@700&family=Gowun+Dodum&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Comfortaa:wght@700&family=Gowun+Dodum&family=Permanent+Marker&display=swap');
+
 :root {
+    --ft-color-black: #000;
     --bs-color-blue: #0d6efd;
     --bs-color-indigo: #6610f2;
     --bs-color-purple: #6f42c1;
@@ -21,132 +35,75 @@
     --bs-color-warning: #ffc107;
     --bs-color-danger: #dc3545;
     --bs-color-light: #f8f9fa;
-    --bs-color-dark: #212529;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: 'poppins', sans-serif, serif;
-}
-
-/* 머리말 스타일 */
-header {
-    height: 150px;
-    background-color: rgb(245, 182, 182);
-}
-
-.nav {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
-.nav .nav-sub {
-    display: flex;
-    list-style: none;
-}
-
-.nav .nav-sub li {
-    height: 50px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(245, 182, 182);
-    border-radius: 5px;
-    margin: 15px;
-}
-
-.nav .nav-sub a {
-    text-decoration: none;
-}
-
-/* 본문 스타일  */
-main {
-    min-height: 1000px;
-}
-
-.title {
-    height: 300px;
-    background-image: url('/image/austria.jpg');
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
-    position: relative;
-}
-
-.title-text {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    color: #fff;
-}
-.mode .top_left:hover{
-    transform: scale(1.05);
-    text-decoration: none;
-    background-color: rgb(245, 182, 182);
-}
-.mode .top_right:hover{
-    transform: scale(1.05);
-    text-decoration: none;
-    background-color: rgb(245, 182, 182);
-}
-
-.mode .bottom_left:hover{
-    transform: scale(1.05);
-    text-decoration: none;
-    background-color: rgb(245, 182, 182);
-}
-.mode .bottom_left:hover{
-    transform: scale(1.05);
-    text-decoration: none;
-    background-color: rgb(245, 182, 182);
+    --bs-color--dark: #212529;
+    --bs-color--green: #064420;
 }
 .mode{
-    /* display: flex;
-    flex-direction : row ;
-    flex-wrap : wrap ;
-    justify-content: center;
-    align-content: center; */
-    padding-top: 30px;
-    height: 680px;
+    padding: 20px;
+    height: 800px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     grid-template-rows: 1fr 1fr;
     color: white;
+    background-color: #faf2da;
+    font-family: 'Gowun Dodum','poppins';
+    font-size: 2.2rem;
+    font-display: center;
+}
+.mode .top_left:hover{
+    transform: scale(1.05);
+    background-image: url('/screen/image/sky2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color:  #94D0CC;
+}
+.mode .top_right:hover{
+    transform: scale(1.05);
+    background-image: url('/screen/image/sky2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color:  #94D0CC;
+}
+.mode .bottom_left:hover{
+    transform: scale(1.05);
+    background-image: url('/screen/image/sky2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #94D0CC;
+}
+.mode .bottom_right:hover{
+    transform: scale(1.05);
+    background-image: url('/screen/image/sky2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #94D0CC;
 }
 
 .mode .top_left{
-    background-Color:rgb(17,83,39);
+    background-Color:#F29191;
     border-radius: 10px;
     text-align: center;
 }
 .mode .top_right{
-    background-Color:rgb(17,83,39);
+    background-Color:#F29191;
     border-radius: 10px;
     text-align: center;
 }
 .mode .bottom_left{
-    background-Color:rgb(17,83,39);
+    background-Color:#F29191;
     border-radius: 10px;
     text-align: center;
 }
 .mode .bottom_right{
-    background-Color:rgb(17,83,39);
+    background-Color:#F29191;
     border-radius: 10px;
     text-align: center;
 } 
 
 /* 꼬리 스타일 */
-footer {
+/* footer {
     padding: 20px;
     height: 300px;
     background-color: rgb(245, 182, 182);
@@ -189,4 +146,4 @@ footer p {
     margin: 10px auto;
     background-color: rgb(248, 181, 169);
     border: none;
-}
+} */
