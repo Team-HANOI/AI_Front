@@ -3,6 +3,11 @@ const nav = document.querySelector('.nav')
 // 스크롤링 색 변환 효과
 window.addEventListener('scroll', () => {
     if (window.scrollY > nav.getBoundingClientRect().bottom) {
+
+
+       console.log(nav.getBoundingClientRect().bottom, window.scrollY);
+
+
         nav.classList.add('down')
     } else {
         nav.classList.remove('down')
@@ -24,7 +29,6 @@ function removeActive() {
         navMenu.classList.remove('active')
     });
 }
-
 
 
 
