@@ -7,3 +7,24 @@ window.addEventListener('scroll', () => {
         nav.classList.remove('down')
     }
 })
+
+const navMenus = document.querySelectorAll('.nav-menu li')
+
+navMenus.forEach(navMenu => {
+    navMenu.addEventListener('click', (e) => {
+        e.preventDefault()
+        removeActive()
+        navMenu.classList.add('active')
+    })
+});
+
+function removeActive() {
+    navMenus.forEach(navMenu => {
+        navMenu.classList.remove('active')
+    });
+}
+
+
+
+
+
