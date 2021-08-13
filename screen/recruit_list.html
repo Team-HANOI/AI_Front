@@ -25,27 +25,86 @@
     <!-- 머리말 시작 -->
     <header>
         <nav class="nav">
-            <ul class="nav-sub nav-menu">
-                <a href=""><li>홈</li></a>
-                <a href=""><li>면접하기</li></a>
-                <a href=""><li>커뮤니티</li></a>
-                <a href=""><li>채용공고</li></a>
+            <!-- 사이트 명 -->
+            <ul class="nav-sub nav-title">
+                <a href="main.html">
+                    <li class="nav-sub-li">
+                        <span class="nav-title-mr">Mr.</span>
+                        <span class="nav-title-alpaca">
+                            Alpaca
+                        </span>
+                        <div class="line"></div>
+                    </li>
+                </a>
             </ul>
-            <ul class="nav-sub nav-user">
-                <a href=""><li>로그인</li></a>
-                <a href=""><li>회원가입</li></a>
+
+            <!-- 네비게이션 메뉴 -->
+            <ul class="nav-sub nav-menu">
+                <a href="main.html">
+                    <li>홈</li>
+                </a>
+                <a href="interview_review.html">
+                    <li class="nav-sub-box">면접하기
+                        <ul class="nav-sub-sub">
+                            <!-- test class needs to be deleted -->
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="nav-sub-box">커뮤니티
+                        <ul class="nav-sub-sub">
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="nav-sub-box">채용공고
+                        <ul class="nav-sub-sub">
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="nav-sub-box">로그인
+                        <ul class="nav-sub-sub">
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="nav-sub-box">회원가입
+                        <ul class="nav-sub-sub">
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                        </ul>
+                    </li>
+                </a>
             </ul>
         </nav>
     </header>
 
-    <!-- 구분선 -->
-    <div class="line"></div>
-
     <!-- 본문 시작 -> 여기서 작업하세요 -->
-    <main>
+    <main> 
+        <!-- 본문 타이틀 -->
+        <div class="title">
+            <div class="title-text">
+                <h1 class="text">인터뷰</h1>
+                <h3 class="text">인터뷰</h3>
+            </div>
+        </div>
         <h1 class="recruit-title">채용공고</h1>
         <!-- 프로필 -->
-        <div class="recruit">
+        <!-- <div class="recruit">
             <div class="recruit-box">
                 <img src="" alt="" class="recruit-img">
                 <div class="recruit-info">
@@ -123,6 +182,92 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="container">
+            <div class="card" id="pick">
+                <div class="img-gradient"></div>
+                <img src="img/austria.jpg" alt="" srcset="">
+                <div class="text-wrap">
+                    <h1>회사이름</h1>
+                    <button>java</button>
+                    <button>jQuery</button>
+                    <button>python</button>
+                </div>
+                <div class="play-button1"></div>
+            </div>
+    
+            <div class="card">
+                <div class="img-gradient"></div>
+                <img src="img/sample-2.jpg" alt="" srcset="">
+                <div class="text-wrap">
+                    <h1>회사이름</h1>
+                    <button>java</button>
+                    <button>jQuery</button>
+                    <button>python</button>
+                </div>
+                <div class="play-button2"></div>
+            </div>
+            <div class="card">
+                <div class="img-gradient"></div>
+                <img src="img/sample-2.jpg" alt="" srcset="">
+                <div class="text-wrap">
+                    <h1>회사이름</h1>
+                    <button>java</button>
+                    <button>jQuery</button>
+                    <button>python</button>
+                </div>
+                <div class="play-button"></div>
+            </div>
+            <div class="card">
+                <div class="img-gradient"></div>
+                <img src="img/sample-2.jpg" alt="" srcset="">
+                <div class="text-wrap">
+                    <h1>회사아아</h1>
+                    <button>java</button>
+                    </div>
+                <div class="play-button"></div>
+            </div>
+            <div class="card">
+                <div class="img-gradient"></div>
+                <img src="img/sample-2.jpg" alt="" srcset="">
+                <div class="text-wrap">
+                    <h1>Nam lacinia</h1>
+                    <h1>회사이름</h1>
+                    <button>java</button>
+                    <button>jQuery</button>
+                    <button>python</button>
+                </div>
+                <div class="play-button"></div>
+            </div>
+            <div class="card">
+                <div class="img-gradient"></div>
+                <img src="img/sample-2.jpg" alt="" srcset="">
+                <div class="text-wrap">
+                    <h1>Nam lacinia</h1>
+                    <p>Duis interdum elit nibh. Vivamus non nu est laoreet. </p>
+                </div>
+                <div class="play-button"></div>
+            </div>
+            <div class="card">
+                <div class="img-gradient"></div>
+                <img src="img/sample-2.jpg" alt="" srcset="">
+                <div class="text-wrap">
+                    <h1>Nam lacinia</h1>
+                    <p>Duis interdum elit nibh. Vivamus non nu est laoreet. </p>
+                </div>
+                <div class="play-button"></div>
+            </div>
+    
+            <div class="card">
+                <div class="img-gradient"></div>
+                <img src="img/sample-3.jpg" alt="" srcset="">
+                <div class="text-wrap">
+                    <h1>Integer 5</h1>
+                    <p>Cras nec nunc ut neque cursus dictum.</p>
+                </div>
+                <div class="play-button"></div>
+            </div>
+            
         </div>
     </main>
 
