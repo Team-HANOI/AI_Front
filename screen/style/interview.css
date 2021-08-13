@@ -54,28 +54,31 @@
 }
 .mode .top_left:hover{
     transform: scale(1.05);
-    background-image: url('/screen/image/sky2.jpg');
+    background-image: url('/AI_Front/screen/image/sky2.jpg');
     background-position: center;
     background-size: cover;
     background-color:  #94D0CC;
 }
 .mode .top_right:hover{
     transform: scale(1.05);
-    background-image: url('/screen/image/sky2.jpg');
+    background-image: url('/AI_Front/screen/image/sky2.jpg');
+    background-position: center;
     background-position: center;
     background-size: cover;
     background-color:  #94D0CC;
 }
 .mode .bottom_left:hover{
     transform: scale(1.05);
-    background-image: url('/screen/image/sky2.jpg');
+    background-image: url('/AI_Front/screen/image/sky2.jpg');
+    background-position: center;
     background-position: center;
     background-size: cover;
     background-color: #94D0CC;
 }
 .mode .bottom_right:hover{
     transform: scale(1.05);
-    background-image: url('/screen/image/sky2.jpg');
+    background-image: url('/AI_Front/screen/image/sky2.jpg');
+    background-position: center;
     background-position: center;
     background-size: cover;
     background-color: #94D0CC;
