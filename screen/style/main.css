@@ -70,19 +70,15 @@ header {
     transition: .4s ease;
 }
 
-.nav.down {
+.nav.down { /* 네비게이션 클릭 효과 */
     background-color: #94D0CC;
-}
-
-.nav.down .nav-sub li {
-    color: var(--bs-color-white);
 }
 
 .nav.down .nav-title li .line {
     background-color: var(--bs-color-white);
 }
 
-.nav .nav-sub a {
+.nav a {
     text-decoration: none;
 }
 
@@ -100,6 +96,14 @@ header {
     border-radius: 5px;
     margin: 15px;
     color: var(--ft-color-black);
+}
+
+.nav .nav-sub a {
+    color: var(--ft-color-black);
+}
+
+.nav.down .nav-sub li, .nav.down .nav-sub a {
+    color: #fff;
 }
 
 .nav-title {
@@ -171,14 +175,83 @@ header {
     /* background-color: var(--bs-color-cyan); */
 }
 
+/* 네비게이션 하위 메뉴 */
+
 .nav-sub-sub {
     position: absolute;
-    top: 100px;
-    display: flex;
+    top: 50px;
     visibility: hidden;
+    
 }
 
-.nav .nav-menu > li:hover .nav-sub-sub {
+.nav-sub-sub::before {
+    content: "";
+    height: 90%;
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.nav-sub-sub::after {
+    content: "";
+    height: 30px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    opacity: .5; 
+}
+
+.nav-sub-sub li {
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff !important;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50px);
+}
+
+.nav-sub-sub a:nth-child(odd) li::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f06c';
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    opacity: .8;
+    color: green;
+    right: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+.nav-sub-sub a:nth-child(even) li::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f06c';
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    opacity: .8;
+    color: green;
+    left: 0;
+    position: absolute;
+}
+
+.nav-sub-sub li {
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff !important;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50px);
+}
+
+.nav .nav-menu li:hover > .nav-sub-sub {
     visibility: visible;
 }
 
@@ -189,11 +262,8 @@ main {
 
 .title {
     height: 1000px;
-
     background-image: url('/image/sky.jpg');
-
     background-image: url('/screen/image/sky.jpg');
-
     background-position: center;
     background-repeat: none;
     background-size: cover;
