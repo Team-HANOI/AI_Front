@@ -1,0 +1,58 @@
+/* 본문 스타일  */
+.norm{
+    display: flex;
+    background-color: rgb(250, 218, 218);
+    align-items: center;
+    justify-content: center;
+}
+
+/* 메인화면 게시판 스타일 */
+.normal {
+    margin: 20px;
+    padding: auto;
+    height: 800px;
+    display: flex;
+    background-image: url('/AI_Front/screen/image/sky2.jpg');
+    background-size: cover;
+    border-radius: 30px;
+    font-family: 'Gowun Dodum';
+}
+
+.normal-question{
+    position: absolute;
+    left: 120px;
+    top: 1550px;
+    color: #fff;
+}
+
+.normal-answer{
+    position: absolute;
+    left: 120px;
+    top: 1600px;
+    color: #fff;  
+}
+
+#btn_group button{
+    width: 100px;
+    height: 40px;
+    border: 2px solid #d63384 #94d0cc;
+    color: #0a81ab;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#btn_group {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 1000px;
+    height: 1000px;
+    width: 1000px;
+    margin: 200px;
+}
+
+
+
+

@@ -55,6 +55,7 @@ header {
     height: 100px;
     width: 100%;
     position: fixed;
+    top: 0;
     z-index: 2;
 }
 
@@ -144,8 +145,33 @@ header {
 .nav .nav-menu {
     margin-right: 50px;
     margin-top: 10px !important;
-    font-weight: bold;
     font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav .nav-menu::before {
+    content: "";
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: red;
+    opacity: .5;
+    transform: translateX(100%);
+    transition: .4s ease;
+    border-bottom-left-radius: 50%;
+    z-index: 5;
+}
+
+.nav .nav-menu:hover::before {
+    content: "";
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    background-color: red;
+    opacity: .5;
+    transform: translateX(0%);
 }
 
 .nav .nav-menu li {
@@ -172,16 +198,24 @@ header {
 
 .nav .nav-menu li:hover, :focus {
     text-decoration: underline; 
-    /* background-color: var(--bs-color-cyan); */
 }
 
 /* 네비게이션 하위 메뉴 */
-
 .nav-sub-sub {
     position: absolute;
     top: 50px;
     visibility: hidden;
-    
+    z-index: 6;
+}
+
+.nav-sub-sub li {
+    color: #fff !important;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    transform: translateX(-50px);
+    font-weight: initial;
+    font-size: .9rem;
 }
 
 .nav-sub-sub::before {
@@ -197,27 +231,6 @@ header {
     border-right: 2px solid black;
 }
 
-.nav-sub-sub::after {
-    content: "";
-    height: 30px;
-    width: 70px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    opacity: .5; 
-}
-
-.nav-sub-sub li {
-    background-color: rgba(0, 0, 0, .4);
-    color: #fff !important;
-    position: absolute;
-    top: 0;
-    transform: translateX(-50px);
-}
-
 .nav-sub-sub a:nth-child(odd) li::after {
     font-family: "Font Awesome 5 Free";
     content: '\f06c';
@@ -226,9 +239,10 @@ header {
     font-size: 2rem;
     opacity: .8;
     color: green;
-    right: 0;
+    right: -30%;
     position: absolute;
     transform: rotateY(180deg);
+    font-weight: bold;
 }
 
 .nav-sub-sub a:nth-child(even) li::after {
@@ -239,16 +253,9 @@ header {
     font-size: 2rem;
     opacity: .8;
     color: green;
-    left: 0;
+    left: -30%;
     position: absolute;
-}
-
-.nav-sub-sub li {
-    background-color: rgba(0, 0, 0, .4);
-    color: #fff !important;
-    position: absolute;
-    top: 0;
-    transform: translateX(-50px);
+    font-weight: bold;
 }
 
 .nav .nav-menu li:hover > .nav-sub-sub {
@@ -278,6 +285,51 @@ main {
     color: #fff;
     background-color: rgba(0, 0, 0, .3);
     padding: 10px 20px 5px 40px;
+}
+
+/* 구름효과 */
+.cloud-box .cloud {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: 25%;
+    left: 300px;
+    z-index: 5;
+    transform: translateX(0);
+    animation: cloud 80s ease infinite;
+}
+
+.cloud-box:nth-child(2) .cloud {
+    height: 200px;
+    width: 200px;
+    top: 30%;
+    left: 200px;
+    display: block;
+}
+
+.cloud-box:nth-child(3) .cloud {
+    height: 350px;
+    width: 350px;
+    top: 30%;
+    left: 350px;
+}
+
+.cloud-box:nth-child(4) .cloud {
+    height: 100px;
+    width: 100px;
+    top: 28%;
+    left: 440px;
+}
+
+@keyframes cloud {
+    50% {
+        transform: translateX(-25%);
+        height: 200px;
+        width: 200px;
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .intro {
@@ -321,9 +373,6 @@ footer p {
 .developers .developers-id {
     width: 100px;
     font-size: .9rem;
-}
-
-=======
 }
 
 .developers {

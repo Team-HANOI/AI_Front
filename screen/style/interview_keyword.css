@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 body::before {
     content: "";
     height: 200vh;
@@ -7,6 +11,7 @@ body::before {
     opacity: .5;
     z-index: 1;
 }
+
 label {
     display: inline-block;
     padding: 20px;
@@ -15,13 +20,16 @@ label {
     color: white;
     border-radius: 1rem;
     cursor: pointer;
-  }
-  input[type="checkbox"] {
+}
+
+input[type="checkbox"] {
     display: none;
-  }
-  input[type="checkbox"]:checked ~ label {
+}
+
+input[type="checkbox"]:checked ~ label {
     background:#f29191;
-  }
+}
+
 .keyword {
     height: 500px;
     width: 600px;
@@ -37,9 +45,6 @@ label {
     align-items: center;
     justify-content: center;
 }
-
-
-
 
 .login-input {
     border: 2px solid #000;

@@ -18,7 +18,6 @@ window.addEventListener('scroll', () => {
 const navMenus = document.querySelectorAll('.nav-menu li')
 navMenus.forEach(navMenu => {
     navMenu.addEventListener('click', (e) => {
-        e.preventDefault()
         removeActive()
         navMenu.classList.add('active')
     })
@@ -40,11 +39,11 @@ navBoxes.forEach((navBox, menuIndex) => {
         navSubLists.forEach(navSubList => {
             console.log(menuIndex, subIndex, navSubList.className)
             if (subIndex % 2 === 0) {
-                console.log("even")
-                navSubList.style.transform = `translateX(${50}px)`
+                navSubList.style.transform = `translateX(${35}px)`
+            } else {
+                navSubList.style.transform = `translateX(${-135}px)`
             }
             if (navSubList.className === 'sub-last-item') {
-                console.log('last')
                 subIndex = -1
             }
             subIndex++ 
@@ -59,7 +58,3 @@ navBoxes.forEach(navBox => {
         });
     })
 });
-
-
-
-
