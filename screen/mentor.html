@@ -12,6 +12,7 @@
 
     <!-- custom styles -->
     <link rel="stylesheet" href="style/mentor.css">
+    <link rel="stylesheet" href="style/main.css">
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
@@ -21,21 +22,59 @@
     <!-- 머리말 시작 -->
     <header>
         <nav class="nav">
-            <ul class="nav-sub nav-menu">
-                <a href=""><li>홈</li></a>
-                <a href=""><li>면접하기</li></a>
-                <a href=""><li>커뮤니티</li></a>
-                <a href=""><li>채용공고</li></a>
+            <!-- 사이트 명 -->
+            <ul class="nav-sub nav-title">
+                <a href="main.html">
+                    <li class="nav-sub-li">
+                        <span class="nav-title-mr">Mr.</span>
+                        <span class="nav-title-alpaca">
+                            Alpaca
+                        </span>
+                        <div class="line"></div>
+                    </li>
+                </a>
             </ul>
-            <ul class="nav-sub nav-user">
-                <a href=""><li>로그인</li></a>
-                <a href=""><li>회원가입</li></a>
+
+            <!-- 네비게이션 메뉴 -->
+            <ul class="nav-sub nav-menu">
+                <a href="main.html">
+                    <li>홈</li>
+                </a>
+                <a href="interview_main.html">
+                    <li class="nav-sub-box">면접하기
+                        <ul class="nav-sub-sub">
+                            <!-- test class needs to be deleted -->
+                            <a href="interview_normal.html"><li>일반면접모드</li></a>
+                            <a href="interview_recruit.html"><li>채용공고모드</li></a>
+                            <a href="interview_keyword.html"><li>맞춤모드</li></a>
+                            <a href="#"><li class="sub-last-item">멘토모드</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="board_total.html">
+                    <li class="nav-sub-box">커뮤니티
+                        <ul class="nav-sub-sub">
+                            <a href="board_write.html"><li>후기 작성하기</li></a>
+                            <a href="interview_review.html"><li>인터뷰 후기보기</li></a>
+                            <a href="board_free.html"><li>자유게시판보기</li></a>
+                            <a href="board_recommend.html"><li>제안 질문보기</li></a>
+                            <a href="board_best_answers.html"><li>모범 답안보기</li></a>
+                            <a href="board_total.html"><li class="sub-last-item">질문 답변보기</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="recruit_list.html">
+                    <li class="nav-sub-box">채용공고</li>
+                </a>
+                <a href="login.html">
+                    <li class="nav-sub-box">로그인</li>
+                </a>
+                <a href="join.html">
+                    <li class="nav-sub-box">회원가입</li>
+                </a>
             </ul>
         </nav>
     </header>
-
-    <!-- 구분선 -->
-    <div class="line"></div>
 
     <!-- 본문 시작 -> 여기서 작업하세요 -->
     <main>
@@ -55,7 +94,7 @@
 
         <!-- 메인화면 게시판 -->
         <ul>
-          <li>
+          <li class="mentor">
             <div class="mentor-item">
               <div class="mentor-cover"></div>
               <div class="mentor-info">
@@ -65,7 +104,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li class="mentor">
             <div class="mentor-item" style="cursor: pointer;" onclick="location.href='';">
                 <div class="mentor-cover"></div>
                 <div class="mentor-info">
@@ -75,7 +114,7 @@
                 </div>
               </div>
           </li>
-          <li>
+          <li class="mentor">
             <div class="mentor-item" style="cursor: pointer;" onclick="location.href='';">
                 <div class="mentor-cover"></div>
                 <div class="mentor-info">
@@ -85,7 +124,7 @@
                 </div>
               </div>
           </li>
-          <li>
+          <li class="mentor">
             <div class="mentor-item" style="cursor: pointer;" onclick="location.href='';">
                 <div class="mentor-cover"></div>
                 <div class="mentor-info">
@@ -100,26 +139,25 @@
 
     <!-- 꼬리 시작 -->
     <footer>
-
         <!-- 깃 허브 링크 -->
         <div class="developers">
-            <a href="https://github.com/orgs/Team-HANOI/dashboard">
+            <a class="hayoon" href="https://github.com/orgs/Team-HANOI/dashboard">
                 <i class="fab fa-github-square fa-4x"></i>
                 <p class="developers-id">Team-HANOI</p>
             </a>
-            <a href="https://github.com/HAYOON26">
+            <a class="hayoon" href="https://github.com/HAYOON26">
                 <i class="fab fa-github-square fa-4x developers-git"></i>
                 <p class="developers-id">HAYOON26</p>
             </a>
-            <a href="https://github.com/AngryPig123">
+            <a class="hayoon" href="https://github.com/AngryPig123">
                 <i class="fab fa-github-square fa-4x developers-git"></i>
                 <p class="developers-id">AngryPig123</p>
             </a>
-            <a href="https://github.com/hs95blue">
+            <a class="hayoon" href="https://github.com/hs95blue">
                 <i class="fab fa-github-square fa-4x developers-git"></i>
                 <p class="developers-id">hs95blue</p>
             </a>
-            <a href="https://github.com/jin-co">
+            <a class="hayoon" href="https://github.com/jin-co">
                 <i class="fab fa-github-square fa-4x developers-git"></i>
                 <p class="developers-id">jin-co</p>
             </a>

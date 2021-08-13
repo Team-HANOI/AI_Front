@@ -18,7 +18,6 @@ window.addEventListener('scroll', () => {
 const navMenus = document.querySelectorAll('.nav-menu li')
 navMenus.forEach(navMenu => {
     navMenu.addEventListener('click', (e) => {
-        e.preventDefault()
         removeActive()
         navMenu.classList.add('active')
     })
@@ -35,31 +34,23 @@ const navBoxes = document.querySelectorAll('.nav-sub-box')
 const navSubLists = document.querySelectorAll('.nav-sub-sub li')
 
 navBoxes.forEach((navBox, menuIndex) => {
+    let subIndex = 0
     navBox.addEventListener('mouseenter', () => {
-        let subIndex = 0
-        let flag = false
         navSubLists.forEach(navSubList => {
-            if (menuIndex % 2 != 0 && subIndex != 1) {
-                flag = true
-                subIndex = 0
-            } 
-            if(menuIndex%2==0){
-                if ( subIndex % 2 ==0) {
-                    navSubList.style.transform = `translateX(${50}px)`
-                }
+            console.log(menuIndex, subIndex, navSubList.className)
+            if (subIndex % 2 === 0) {
+                navSubList.style.transform = `translateX(${35}px)`
+            } else {
+                navSubList.style.transform = `translateX(${-135}px)`
             }
-            if(menuIndex%2!=0){
-                if ( subIndex % 2 !=0) {
-                    navSubList.style.transform = `translateX(${50}px)`
-                }
+            if (navSubList.className === 'sub-last-item') {
+                subIndex = -1
             }
-            
             subIndex++ 
-            console.log(menuIndex, subIndex, flag)
         });
     })
 });
-//
+
 navBoxes.forEach(navBox => {
     navBox.addEventListener('mouseleave', () => {
         navSubLists.forEach((navSubList, idx) => {
@@ -67,7 +58,3 @@ navBoxes.forEach(navBox => {
         });
     })
 });
-
-
-
-

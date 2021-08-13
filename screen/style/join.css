@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 .join {
     height: 700px;
     width: 550px;
