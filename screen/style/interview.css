@@ -63,6 +63,7 @@
     transform: scale(1.05);
     background-image: url('/screen/image/sky2.jpg');
     background-position: center;
+    background-position: center;
     background-size: cover;
     background-color:  #94D0CC;
 }
@@ -70,12 +71,14 @@
     transform: scale(1.05);
     background-image: url('/screen/image/sky2.jpg');
     background-position: center;
+    background-position: center;
     background-size: cover;
     background-color: #94D0CC;
 }
 .mode .bottom_right:hover{
     transform: scale(1.05);
     background-image: url('/screen/image/sky2.jpg');
+    background-position: center;
     background-position: center;
     background-size: cover;
     background-color: #94D0CC;
