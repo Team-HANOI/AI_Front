@@ -43,9 +43,17 @@ navBoxes.forEach((navBox, menuIndex) => {
                 flag = true
                 subIndex = 0
             } 
-            if ( subIndex % 2 === 0) {
-                navSubList.style.transform = `translateX(${50}px)`
+            if(menuIndex%2==0){
+                if ( subIndex % 2 ==0) {
+                    navSubList.style.transform = `translateX(${50}px)`
+                }
             }
+            if(menuIndex%2!=0){
+                if ( subIndex % 2 !=0) {
+                    navSubList.style.transform = `translateX(${50}px)`
+                }
+            }
+            
             subIndex++ 
             console.log(menuIndex, subIndex, flag)
         });
