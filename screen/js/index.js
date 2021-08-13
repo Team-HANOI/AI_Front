@@ -35,23 +35,23 @@ const navBoxes = document.querySelectorAll('.nav-sub-box')
 const navSubLists = document.querySelectorAll('.nav-sub-sub li')
 
 navBoxes.forEach((navBox, menuIndex) => {
+    let subIndex = 0
     navBox.addEventListener('mouseenter', () => {
-        let subIndex = 0
-        let flag = false
         navSubLists.forEach(navSubList => {
-            if (menuIndex % 2 != 0 && subIndex != 1) {
-                flag = true
-                subIndex = 0
-            } 
-            if ( subIndex % 2 === 0) {
+            console.log(menuIndex, subIndex, navSubList.className)
+            if (subIndex % 2 === 0) {
+                console.log("even")
                 navSubList.style.transform = `translateX(${50}px)`
             }
+            if (navSubList.className === 'sub-last-item') {
+                console.log('last')
+                subIndex = -1
+            }
             subIndex++ 
-            console.log(menuIndex, subIndex, flag)
         });
     })
 });
-//
+
 navBoxes.forEach(navBox => {
     navBox.addEventListener('mouseleave', () => {
         navSubLists.forEach((navSubList, idx) => {
