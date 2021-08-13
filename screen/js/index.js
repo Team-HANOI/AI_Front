@@ -51,6 +51,7 @@ navBoxes.forEach((navBox, menuIndex) => {
         });
     })
 });
+//
 navBoxes.forEach(navBox => {
     navBox.addEventListener('mouseleave', () => {
         navSubLists.forEach((navSubList, idx) => {
