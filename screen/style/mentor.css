@@ -107,15 +107,15 @@ li {
     background: #fff; 
     text-align: center; }
 
-li:nth-child(2) .mentor-cover {
-    background-image: url('/image/green.jpg');
+li:nth-child(2).mentor-cover {
+    background-image:url('/image/green.jpg');
 }
-li:nth-child(3) .mentor-cover {
-    background-image: url('/image/green.jpg');
+li:nth-child(3).mentor-cover {
+    background-image:url('/image/green.jpg');
     
 }
-li:nth-child(4) .mentor-cover {
-    background-image: url('/image/green.jpg');
+li:nth-child(4).mentor-cover {
+    background-image:url('/image/green.jpg');
 }
 .mentor-item{
     width: 100%;
