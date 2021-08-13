@@ -190,9 +190,11 @@ main {
 .title {
     height: 1000px;
 
+
     background-image: url('/image/sky.jpg');
 
     background-image: url('/screen/image/sky.jpg');
+
 
     background-position: center;
     background-repeat: none;
