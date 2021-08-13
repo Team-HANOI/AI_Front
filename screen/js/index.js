@@ -37,21 +37,21 @@ const navSubLists = document.querySelectorAll('.nav-sub-sub li')
 navBoxes.forEach((navBox, menuIndex) => {
     navBox.addEventListener('mouseenter', () => {
         let subIndex = 0
+        let flag = false
         navSubLists.forEach(navSubList => {
-            
             if (menuIndex % 2 != 0 && subIndex != 1) {
+                flag = true
                 subIndex = 0
-                console.log()
             } 
             if ( subIndex % 2 === 0) {
-                console.log(subIndex)
                 navSubList.style.transform = `translateX(${50}px)`
             }
             subIndex++ 
-            console.log(subIndex)
+            console.log(menuIndex, subIndex, flag)
         });
     })
 });
+//
 navBoxes.forEach(navBox => {
     navBox.addEventListener('mouseleave', () => {
         navSubLists.forEach((navSubList, idx) => {
