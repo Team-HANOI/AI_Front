@@ -149,8 +149,9 @@ header {
     transition: .4s ease;
 }
 
-.nav .nav-menu li::before {   
-    content: "Mr.";
+.nav .nav-menu li::before {  
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f1b0";
     height: 10px;
     width: 10px;
     border-radius: 50%;
@@ -177,7 +178,7 @@ header {
     visibility: hidden;
 }
 
-.nav .nav-menu + li:hover, :focus .nav-sub-sub {
+.nav .nav-menu > li:hover .nav-sub-sub {
     visibility: visible;
 }
 
@@ -188,7 +189,11 @@ main {
 
 .title {
     height: 1000px;
-    background-image: url('/AI_Front/screen/image/sky.jpg');
+
+    background-image: url('/image/sky.jpg');
+
+    background-image: url('/screen/image/sky.jpg');
+
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -217,7 +222,6 @@ main {
 footer {
     padding: 20px;
     height: 300px;
-    /* background-color: rgb(214, 202, 202); */
     background-color: #94D0CC;
     color: #fff;
     text-align: center;
@@ -226,6 +230,7 @@ footer {
 footer p {
     width: 70%;
     margin: 0 auto;
+
 }
 
 .developers {
@@ -247,6 +252,30 @@ footer p {
     width: 100px;
     font-size: .9rem;
 }
+
+=======
+}
+
+.developers {
+    margin: 20px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.developers a {
+    text-decoration: none;
+}
+
+.developers .developers-git {
+    margin-bottom: 10px;
+}
+
+.developers .developers-id {
+    width: 100px;
+    font-size: .9rem;
+}
+
 
 /* --- 화면에 공통으로 사용되는 스타일들 --- */
 
