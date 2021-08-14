@@ -26,15 +26,70 @@
     <!-- 머리말 시작 -->
     <header>
         <nav class="nav">
-            <ul class="nav-sub nav-menu">
-                <a href=""><li>홈</li></a>
-                <a href=""><li>면접하기</li></a>
-                <a href=""><li>커뮤니티</li></a>
-                <a href=""><li>채용공고</li></a>
+            <!-- 사이트 명 -->
+            <ul class="nav-sub nav-title">
+                <a href="main.html">
+                    <li class="nav-sub-li">
+                        <span class="nav-title-mr">Mr.</span>
+                        <span class="nav-title-alpaca">
+                            Alpaca
+                        </span>
+                        <div class="line"></div>
+                    </li>
+                </a>
             </ul>
-            <ul class="nav-sub nav-user">
-                <a href=""><li>로그인</li></a>
-                <a href=""><li>회원가입</li></a>
+
+            <!-- 네비게이션 메뉴 -->
+            <ul class="nav-sub nav-menu">
+                <a href="main.html">
+                    <li>홈</li>
+                </a>
+                <a href="interview_review.html">
+                    <li class="nav-sub-box">면접하기
+                        <ul class="nav-sub-sub">
+                            <!-- test class needs to be deleted -->
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="nav-sub-box">커뮤니티
+                        <ul class="nav-sub-sub">
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="nav-sub-box">채용공고
+                        <ul class="nav-sub-sub">
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="nav-sub-box">로그인
+                        <ul class="nav-sub-sub">
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="">
+                    <li class="nav-sub-box">회원가입
+                        <ul class="nav-sub-sub">
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                            <a href=""><li>sub</li></a>
+                        </ul>
+                    </li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -43,13 +98,22 @@
     <div class="line"></div>
 
     <!-- 본문 시작 -> 여기서 작업하세요 -->
-    <main>
-        <!-- 프로필 -->
+
+        <main>
+            <!-- 본문 타이틀 -->
+            <div class="title">
+                <div class="title-text">
+                    <h1 class="text">내 프로필</h1>
+                    <h3 class="text">프로필</h3>
+                </div>
+            </div>
+
+            <!-- 프로필 -->
         <div class="profile">
             <!-- 프로필 기본정보 -->
             <div class="profile-intro">
                 <!-- 프로필 사진 -->
-                <img class="profile-img"></img>
+                <img class="profile-img" src="/screen/image/sky2.jpg"></img>
                 <div class="profile-box">
                     <p class="profile-level profile-intro-text">
                         나의레벨: LV 00
@@ -138,23 +202,23 @@
 
         <!-- 깃 허브 링크 -->
         <div class="developers">
-            <a href="https://github.com/orgs/Team-HANOI/dashboard">
+            <a class="hayoon" href="https://github.com/orgs/Team-HANOI/dashboard">
                 <i class="fab fa-github-square fa-4x"></i>
                 <p class="developers-id">Team-HANOI</p>
             </a>
-            <a href="https://github.com/HAYOON26">
+            <a class="hayoon" href="https://github.com/HAYOON26">
                 <i class="fab fa-github-square fa-4x developers-git"></i>
                 <p class="developers-id">HAYOON26</p>
             </a>
-            <a href="https://github.com/AngryPig123">
+            <a class="hayoon" href="https://github.com/AngryPig123">
                 <i class="fab fa-github-square fa-4x developers-git"></i>
                 <p class="developers-id">AngryPig123</p>
             </a>
-            <a href="https://github.com/hs95blue">
+            <a class="hayoon" href="https://github.com/hs95blue">
                 <i class="fab fa-github-square fa-4x developers-git"></i>
                 <p class="developers-id">hs95blue</p>
             </a>
-            <a href="https://github.com/jin-co">
+            <a class="hayoon" href="https://github.com/jin-co">
                 <i class="fab fa-github-square fa-4x developers-git"></i>
                 <p class="developers-id">jin-co</p>
             </a>
@@ -172,3 +236,4 @@
 </html>
 
 
+  

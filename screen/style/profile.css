@@ -6,7 +6,9 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #333;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px#94d0cc;
 }
 
 /* 프로필 기본정보 스타일 */
@@ -17,8 +19,11 @@
 }
 
 .profile-intro .profile-img {
+    border-radius: 70%;
     height: 200px;
-    width: 250px;
+    width: 200px;
+    overflow: hidden;
+    box-shadow: 0 20px 30px pink;
 }
 
 .profile-intro .profile-box {
@@ -44,6 +49,9 @@
     right: 10px;
 }
 
+.line{
+    background-color: #94d0cc;
+}
 /* 프로필 알람설정 스타일 */
 .profile-alert {
     height: 300px;
@@ -88,7 +96,7 @@
 .profile-board .profile-board-top ul li {
     list-style: none;
     margin: 10px 10px;
-    background-color: rgb(189, 184, 184);
+    background-color: pink;
     padding: 10px 20px;
     border-radius: 10px;
 }

@@ -74,7 +74,7 @@ main {
 
 .title {
     height: 300px;
-    background-image: url('/image/austria.jpg');
+    background-image: url('/screen/image/austria.jpg');
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -108,14 +108,14 @@ li {
     text-align: center; }
 
 li:nth-child(2).mentor-cover {
-    background-image:url('/image/green.jpg');
+    background-image:url('/screen/image/green.jpg');
 }
 li:nth-child(3).mentor-cover {
-    background-image:url('/image/green.jpg');
+    background-image:url('/screen/image/green.jpg');
     
 }
 li:nth-child(4).mentor-cover {
-    background-image:url('/image/green.jpg');
+    background-image:url('/screen/image/green.jpg');
 }
 .mentor-item{
     width: 100%;

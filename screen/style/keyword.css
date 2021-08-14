@@ -20,13 +20,13 @@ label {
     display: none;
   }
   input[type="checkbox"]:checked ~ label {
-    background:#f29191;
+    background:pink;
   }
 .keyword {
     height: 500px;
     width: 600px;
     position: sticky;
-    background-color: #325288;
+    background-color:white;
     border-radius: 15px;
     z-index: 2;
     top: 60%;
