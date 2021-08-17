@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
@@ -95,16 +96,19 @@ main {
     justify-content: center;
 }
 
+
 /* 메인화면 게시판 스타일 */
 ul { 
     overflow: hidden; 
 }
-li {
+
+.mentor {
     list-style: none;
     float: left;
     margin: 10px; 
     width: calc(25% - 20px); 
     background: #fff; 
+
     text-align: center; }
 
 li:nth-child(2).mentor-cover {
@@ -116,15 +120,19 @@ li:nth-child(3).mentor-cover {
 }
 li:nth-child(4).mentor-cover {
     background-image:url('/screen/image/green.jpg');
+
 }
-.mentor-item{
+
+.mentor-item {
     width: 100%;
     height: 500px;
     background: rgb(245, 182, 182);
 }
-.mentor-item:hover{
+
+.mentor-item:hover {
 	transform: scale(0.95);
 }
+
 .mentor-cover {
   width: 100%;
   height: 300px;
@@ -152,50 +160,4 @@ li:nth-child(4).mentor-cover {
 .mentor-date {
   font-size: 12px;
   color: rgb(17, 83, 39);
-}
-
-/* 꼬리 스타일 */
-footer {
-    padding: 20px;
-    height: 300px;
-    background-color: rgb(245, 182, 182);
-    text-align: center;
-    color: rgb(17, 83, 39);
-}
-
-footer p {
-    width: 70%;
-    margin: 0 auto;
-    background-color: rgb(245,182,182);
-}
-
-.developers {
-    margin: 20px 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.developers a {
-    text-decoration: none;
-    color:rgb(17, 83, 39);
-}
-
-.developers .developers-git {
-    margin-bottom: 10px;
-    color:rgb(17, 83, 39);
-}
-
-.developers .developers-id {
-    width: 100px;
-    font-size: .9rem;
-}
-
-/* 구분선 */
-.line {
-    height: 1px;
-    width: 95%;
-    margin: 10px auto;
-    background-color: rgb(17, 83, 39);
-    border: none;
 }
