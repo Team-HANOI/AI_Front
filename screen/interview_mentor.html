@@ -5,17 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Alpaka</title>
-    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="shortcut icon" href="favicon/favicon1.ico">
 
     <!-- font awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-    <!-- bootstrap
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
-
     <!-- custom styles -->
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/interview_review.css">
+    <link rel="stylesheet" href="style/interview_mentor.css">
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
@@ -50,7 +47,7 @@
                             <a href="interview_normal.html"><li>일반면접모드</li></a>
                             <a href="interview_recruit.html"><li>채용공고모드</li></a>
                             <a href="interview_keyword.html"><li>맞춤모드</li></a>
-                            <a href="#"><li class="sub-last-item">멘토모드</li></a>
+                            <a href="interview_mentor.html"><li class="sub-last-item">멘토모드</li></a>
                         </ul>
                     </li>
                 </a>
@@ -58,7 +55,7 @@
                     <li class="nav-sub-box">커뮤니티
                         <ul class="nav-sub-sub">
                             <a href="board_write.html"><li>후기 작성하기</li></a>
-                            <a href="interview_review.html"><li>인터뷰 후기보기</li></a>
+                            <a href="board_interview_review.html"><li>인터뷰 후기보기</li></a>
                             <a href="board_free.html"><li>자유게시판보기</li></a>
                             <a href="board_recommend.html"><li>제안 질문보기</li></a>
                             <a href="board_best_answers.html"><li>모범 답안보기</li></a>
@@ -81,80 +78,63 @@
 
     <!-- 본문 시작 -> 여기서 작업하세요 -->
     <main>
-        <!-- 프로필 -->
-        <h1 class="page-title">면접후기 게시판</h1>
-                    <!-- 메인화면 게시판 -->
-        <div class="board">
-            <table class="board-table">
-                <thead class="board-head">
-                    <tr>
-                        <th>Lorem ipsum</th>
-                        <th>Lorem ipsum</th>
-                        <th>Lorem ipsum</th>
-                        <th>Lorem ipsum</th>
-                        <th>Lorem ipsum</th>
-                        <th>Lorem ipsum</th>
-                    </tr>
-                </thead>
-                <tbody class="board-body">
-                    <tr>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                </tfoot>
-            </table>
-            <div class="interview-review-board-right">
-                <table class="interview-review-board">
-                    <tr>
-                        <th>[title]</th>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                    <tr>
-                        <th>[title]</th>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                    <tr>
-                        <th>[title]</th>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                    <tr>
-                        <th>[title]</th>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                </table>
+        <!-- 본문 타이틀 -->
+        <div class="title">
+            <div class="title-text">
+                <h1 class="text">1:1멘토오</h1>
+           </div>
+        </div>
+
+        <div class="intro">
+            <p class="intro-text">자신과 맞는 멘토와 1:1매칭..</p>
+        </div>
+
+        <!-- 구분선 -->
+        <div class="line"></div>
+
+        <!-- 메인화면 게시판 -->
+        <ul class="mentor-box">
+          <li class="mentor">
+            <div class="mentor-item">
+              <div class="mentor-cover"></div>
+              <div class="mentor-info">
+                <p class="mentor-title">ㅇㅇ기업다니는 ㅇㅇㅇ입니다 css가르쳐드립니다~~</p>
+                <p class="mentor-time">화금14:00~15:30</p>
+                <p class="mentor-date">2021.08.11~2021.9.14</p>
+              </div>
             </div>
-        </div>
-        </div>
+          </li>
+          <li class="mentor">
+            <div class="mentor-item" style="cursor: pointer;" onclick="location.href='';">
+                <div class="mentor-cover"></div>
+                <div class="mentor-info">
+                  <p class="mentor-title">ㅇㅇ기업다니는 ㅇㅇㅇ입니다 css가르쳐드립니다~~</p>
+                  <p class="mentor-time">화금14:00~15:30</p>
+                  <p class="mentor-date">2021.08.11~2021.9.14</p>
+                </div>
+              </div>
+          </li>
+          <li class="mentor">
+            <div class="mentor-item" style="cursor: pointer;" onclick="location.href='';">
+                <div class="mentor-cover"></div>
+                <div class="mentor-info">
+                  <p class="mentor-title">ㅇㅇ기업다니는 ㅇㅇㅇ입니다 css가르쳐드립니다~~</p>
+                  <p class="mentor-time">화금14:00~15:30</p>
+                  <p class="mentor-date">2021.08.11~2021.9.14</p>
+                </div>
+              </div>
+          </li>
+          <li class="mentor">
+            <div class="mentor-item" style="cursor: pointer;" onclick="location.href='';">
+                <div class="mentor-cover"></div>
+                <div class="mentor-info">
+                  <p class="mentor-title">ㅇㅇ기업다니는 ㅇㅇㅇ입니다 css가르쳐드립니다~~</p>
+                  <p class="mentor-time">화금14:00~15:30</p>
+                  <p class="mentor-date">2021.08.11~2021.9.14</p>
+                </div>
+              </div>
+          </li>
+        </ul>
     </main>
 
     <!-- 꼬리 시작 -->
