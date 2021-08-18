@@ -1,7 +1,20 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gowun+Dodum&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Comfortaa:wght@700&family=Do+Hyeon&family=Gowun+Dodum&family=Permanent+Marker&display=swap');
+
+/* backups */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Gowun+Dodum&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Comfortaa:wght@700&family=Gowun+Dodum&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Comfortaa:wght@700&family=Gowun+Dodum&family=Permanent+Marker&display=swap');
+
 :root {
+    --ft-color-black: #000;
     --bs-color-blue: #0d6efd;
     --bs-color-indigo: #6610f2;
     --bs-color-purple: #6f42c1;
@@ -22,7 +35,8 @@
     --bs-color-warning: #ffc107;
     --bs-color-danger: #dc3545;
     --bs-color-light: #f8f9fa;
-    --bs-color-dark: #212529;
+    --bs-color--dark: #212529;
+    --bs-color--green: #064420;
 }
 
 * {
@@ -35,66 +49,7 @@ body {
     font-family: 'poppins', sans-serif, serif;
 }
 
-/* 머리말 스타일 */
-header {
-    height: 150px;
-    background-color: rgb(245, 182, 182);
-}
 
-.nav {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    
-}
-
-.nav .nav-sub {
-    display: flex;
-}
-
-.nav .nav-sub li {
-    height: 50px;
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(245, 182, 182);
-    border-radius: 5px;
-    margin: 15px;
-}
-
-.nav .nav-sub a {
-    text-decoration: none;
-}
-
-/* 본문 스타일  */
-main {
-    min-height: 1000px;
-}
-
-.title {
-    height: 300px;
-    background-image: url('/screen/image/austria.jpg');
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
-    position: relative;
-}
-
-.title-text {
-    position: absolute;
-    right: 120px;
-    bottom: 50px;
-    color: #fff;
-}
-
-.intro {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 /* 메인화면 게시판 스타일 */
@@ -111,17 +66,6 @@ ul {
 
     text-align: center; }
 
-li:nth-child(2).mentor-cover {
-    background-image:url('/screen/image/green.jpg');
-}
-li:nth-child(3).mentor-cover {
-    background-image:url('/screen/image/green.jpg');
-    
-}
-li:nth-child(4).mentor-cover {
-    background-image:url('/screen/image/green.jpg');
-
-}
 
 .mentor-item {
     width: 100%;
@@ -133,10 +77,34 @@ li:nth-child(4).mentor-cover {
 	transform: scale(0.95);
 }
 
-.mentor-cover {
+.mentor-cover1{
   width: 100%;
   height: 300px;
-  background-image: url('/image/green.jpg');
+  background-image: url('/screen/image/green.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mentor-cover2{
+  width: 100%;
+  height: 300px;
+  background-image: url('/screen/image/austria.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mentor-cover3{
+  width: 100%;
+  height: 300px;
+  background-image: url('/screen/image/sky.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mentor-cover4{
+  width: 100%;
+  height: 300px;
+  background-image: url('/screen/image/sky2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
