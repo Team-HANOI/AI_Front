@@ -21,8 +21,6 @@ window.addEventListener('load', () => {
     let url = window.location.href
     let urlParts = url.split('/')
     let fileName = urlParts[4]
-    console.log(fileName)
-    console.log(navMenus)
     if (fileName.startsWith('board')) {
         removeActive()
         navMenus[6].classList.add('active')
