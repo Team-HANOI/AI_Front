@@ -1,31 +1,37 @@
-body {
-    overflow: hidden;
-}
-
-body::before {
-    content: "";
-    height: 200vh;
-    width: 100%;
-    position: absolute;
-    background-color: grey;
-    opacity: .5;
-    z-index: 1;
-}
+/* 채용공고 작성하기 */
 
 .login {
-    height: 400px;
-    width: 300px;
-    position: absolute;
+    width: 100%;
     background-color: #fff;
     border-radius: 15px;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.join-title {
+	width: 100%;
+	text-align: left;
+	margin-top: 50px;
+}
+
+.post_page-box {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.post_page-sub-box {
+	display: flex;
+	width: 60%;
+	margin: 10px;
+}
+
+.post_page-sub-box label {
+	width: 200px;
 }
 
 .login-sub {
@@ -48,9 +54,9 @@ body::before {
 }
 
 .login-btn {
-    width: 100%;
+    width: 50%;
     border: 2px solid #000;
-    margin: 5px 0;
+    margin: 15px 0;
     border-radius: 5px;
     padding: 5px 0 0 10px;
     font-size: 1.2rem;
@@ -61,4 +67,8 @@ body::before {
     margin: 5px 0;
     padding: 10px;
     text-align: center;
+}
+
+.join-check {
+	margin: 30px 0 20px;
 }

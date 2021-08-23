@@ -1,39 +1,23 @@
-body {
-    overflow: hidden;
-}
-
-body::before {
-  content: "";
-  height: 200vh;
-  width: 100%;
-  position: absolute;
-  background-color: grey;
-  opacity: .5;
-  z-index: 1;
-}
-
 label {
-
   display: inline-block;
-  padding: 20px;
+  padding: 0 10px;
   margin: 10px;
   background:#94d0cc;
-  color: white;
+  color: #000;
   border-radius: 1rem;
   cursor: pointer;
 }
+
 input[type="checkbox"] {
   display: none;
 }
+
 input[type="checkbox"]:checked ~ label {
   background:pink;
 }
 
-  
-
-.keyword {
-  height: 500px;
-  width: 600px;
+.keyword-box {
+  width: 100%;
   position: sticky;
   background-color:white;
   border-radius: 15px;
@@ -47,29 +31,22 @@ input[type="checkbox"]:checked ~ label {
   justify-content: center;
 }
 
-.login-input {
-  border: 2px solid #000;
-  border-collapse: collapse;
+.keywords {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  
+}
+
+.keyword {
+  width: 110px;
+}
+
+.keyword-btn {
   height: 40px;
-  width: 100%;
-  margin: 5px 0;
+  width: 100px;
   border-radius: 5px;
-  padding: 5px 0 0 10px;
-  font-size: 1.2rem;
-}
-
-.login-btn {
-  width: 100%;
-  border: 2px solid #000;
-  margin: 5px 0;
-  border-radius: 5px;
-  padding: 5px 0 0 10px;
-  font-size: 1.2rem;
-}
-
-.login-text {
-  width: 100%;
-  margin: 5px 0;
-  padding: 10px;
-  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1rem;
 }

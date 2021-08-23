@@ -16,9 +16,12 @@
     <!-- custom styles -->
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/recruit_list.css">
+    <link rel="stylesheet" href="style/recruit_form.css">
+    <link rel="stylesheet" href="style/pop_ups.css">
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
+    <script defer src="js/pop_ups.js"></script>
 </head>
 <body>
 
@@ -80,84 +83,67 @@
     </header>
 
     <!-- 본문 시작 -> 여기서 작업하세요 -->
-    <main> 
+    <main>
+        <div class="popup-card">
+            <p class="popup-text">신청이 완료되었습니다.</p>
+            <a href="recruit_list.html">
+                <button class="btn popup-btn">확인</button>
+            </a>
+        </div>
+
         <!-- 본문 타이틀 -->
         <div class="title">
             <div class="title-text">
                 <h1 class="text">채용공고</h1>
-                <h3 class="text">인터뷰</h3>
             </div>
         </div>
         
-        <div class="post">
-            <a href="recruit_form.html">
-                <button class="post-btn">
-                채용공고 올리기
-                </button>
-            </a>
-        </div>
         <!-- 공고 -->
         <div class="card-box">
-            <div class="card">
-                <img class="card-img" src="image/sky.jpg" alt="" srcset="">
-                <div class="text-wrap">
-                    <h1>회사이름</h1>
-                    <button>java</button>
-                    <button>jQuery</button>
-                    <button>python</button>
+            <!-- 채용공고 -->
+        <form action="recruit_form.html" method="GET" class="login join">
+            <h1 class="join-title">채용공고 작성하기</h1>
+            
+            <!-- 구분선 -->
+            <div class="line"></div>
+            
+            <div class="login-sub">
+                <div class="post_page-box">
+                    <div class="post_page-sub-box">
+                        <label for="">회사이름</label>
+                        <input class="login-input" type="text" placeholder="">
+                    </div>
+                    <div class="post_page-sub-box">
+                        <label for="">이메일</label>
+                        <input class="login-input" type="email" placeholder="">
+                    </div>
+                    <div class="post_page-sub-box">
+                        <label for="">URL</label>
+                        <input class="login-input" type="text" placeholder="">
+                    </div>
+                    <div class="post_page-sub-box">
+                        <label for="">모집 포지션</label>
+                        <input class="login-input" type="text" placeholder="">
+                    </div>
+                    <div class="post_page-sub-box">
+                        <label for="">경력</label>
+                        <input class="login-input" type="number" placeholder="ex) 1">
+                    </div>
+                    <div class="post_page-sub-box">
+                        <label for="">회사로고</label>
+                        <input class="login-input file-load" type="file" placeholder="">
+                    </div>
                 </div>
-                <div class="card-com_url"><a href="">http:aaaaa</a></div> 
+
+                <input class="login-btn btn" type="submit" value="채용공고 올리기">
             </div>
-            <div class="card">
-                <img class="card-img" src="image/sky.jpg" alt="" srcset="">
-                <div class="text-wrap">
-                    <h1>회사이름</h1>
-                    <button>java</button>
-                    <button>jQuery</button>
-                    <button>python</button>
-                </div>
-                <div class="card-com_url"><a href="">http:aaaaa</a></div> 
+
+            <div class="login-text">
+                <a href=""><small>이용약관</small></a> |
+                <a href=""><small>개인정보 처리방침</small></a> |
+                <a href=""><small>FAQ / 문의</small></a>
             </div>
-            <div class="card">
-                <img class="card-img" src="image/sky.jpg" alt="" srcset="">
-                <div class="text-wrap">
-                    <h1>회사이름</h1>
-                    <button>java</button>
-                    <button>jQuery</button>
-                    <button>python</button>
-                </div>
-                <div class="card-com_url"><a href="">http:aaaaa</a></div> 
-            </div>
-            <div class="card">
-                <img class="card-img" src="image/sky.jpg" alt="" srcset="">
-                <div class="text-wrap">
-                    <h1>회사이름</h1>
-                    <button>java</button>
-                    <button>jQuery</button>
-                    <button>python</button>
-                </div>
-                <div class="card-com_url"><a href="">http:aaaaa</a></div> 
-            </div>
-            <div class="card">
-                <img class="card-img" src="image/sky.jpg" alt="" srcset="">
-                <div class="text-wrap">
-                    <h1>회사이름</h1>
-                    <button>java</button>
-                    <button>jQuery</button>
-                    <button>python</button>
-                </div>
-                <div class="card-com_url"><a href="">http:aaaaa</a></div> 
-            </div>
-            <div class="card">
-                <img class="card-img" src="image/sky.jpg" alt="" srcset="">
-                <div class="text-wrap">
-                    <h1>회사이름</h1>
-                    <button>java</button>
-                    <button>jQuery</button>
-                    <button>python</button>
-                </div>
-                <div class="card-com_url"><a href="">http:aaaaa</a></div> 
-            </div>
+        </form>
         </div>
     </main>
 

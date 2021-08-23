@@ -13,99 +13,140 @@
     <!-- custom styles -->
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/interview.css">
+    <link rel="stylesheet" href="style/interview_keyword.css">
+    <link rel="stylesheet" href="style/pop_ups.css">
+    
     <!-- java script -->
     <script defer src="js/index.js"></script>
+    <script defer src="js/pop_ups.js"></script>
 </head>
 <body>
+    <!-- 머리말 시작 -->
+    <header>
+        <nav class="nav">
+            <!-- 사이트 명 -->
+            <ul class="nav-sub nav-title">
+                <a href="main.html">
+                    <li class="nav-sub-li">
+                        <span class="nav-title-mr">Mr.</span>
+                        <span class="nav-title-alpaca">
+                            Alpaca
+                        </span>
+                        <div class="line"></div>
+                    </li>
+                </a>
+            </ul>
 
-   <!-- 머리말 시작 -->
-   <header>
-    <nav class="nav">
-        <!-- 사이트 명 -->
-        <ul class="nav-sub nav-title">
-            <a href="main.html">
-                <li class="nav-sub-li">
-                    <span class="nav-title-mr">Mr.</span>
-                    <span class="nav-title-alpaca">
-                        Alpaca
-                    </span>
-                    <div class="line"></div>
-                </li>
-            </a>
-        </ul>
-
-        <!-- 네비게이션 메뉴 -->
-        <ul class="nav-sub nav-menu">
-            <a href="main.html">
-                <li>홈</li>
-            </a>
-            <a href="interview_main.html">
-                <li class="nav-sub-box">면접하기
-                    <ul class="nav-sub-sub">
-                        <!-- test class needs to be deleted -->
-                        <a href="interview_normal.html"><li>일반면접모드</li></a>
-                        <a href="interview_recruit.html"><li>채용공고모드</li></a>
-                        <a href="interview_keyword.html"><li>맞춤모드</li></a>
-                        <a href="interview_mentor.html"><li class="sub-last-item">멘토모드</li></a>
-                    </ul>
-                </li>
-            </a>
-            <a href="board_total.html">
-                <li class="nav-sub-box">커뮤니티
-                    <ul class="nav-sub-sub">
-                        <a href="board_write.html"><li>후기 작성하기</li></a>
-                        <a href="board_interview_review.html"><li>인터뷰 후기보기</li></a>
-                        <a href="board_free.html"><li>자유게시판보기</li></a>
-                        <a href="board_recommend.html"><li>제안 질문보기</li></a>
-                        <a href="board_best_answers.html"><li>모범 답안보기</li></a>
-                        <a href="board_total.html"><li class="sub-last-item">질문 답변보기</li></a>
-                    </ul>
-                </li>
-            </a>
-            <a href="recruit_list.html">
-                <li class="nav-sub-box">채용공고</li>
-            </a>
-            <a href="login.html">
-                <li class="nav-sub-box">로그인</li>
-            </a>
-            <a href="join.html">
-                <li class="nav-sub-box">회원가입</li>
-            </a>
-        </ul>
-    </nav>
-</header>
+            <!-- 네비게이션 메뉴 -->
+            <ul class="nav-sub nav-menu">
+                <a href="main.html">
+                    <li>홈</li>
+                </a>
+                <a href="interview_main.html">
+                    <li class="nav-sub-box">면접하기
+                        <ul class="nav-sub-sub">
+                            <!-- test class needs to be deleted -->
+                            <a href="interview_normal.html"><li>일반면접모드</li></a>
+                            <a href="interview_recruit.html"><li>채용공고모드</li></a>
+                            <li class="keyword-popup btn">맞춤모드</li>
+                            <a href="interview_mentor.html"><li class="sub-last-item">멘토모드</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="board_total.html">
+                    <li class="nav-sub-box">커뮤니티
+                        <ul class="nav-sub-sub">
+                            <a href="board_write.html"><li>후기 작성하기</li></a>
+                            <a href="board_interview_review.html"><li>인터뷰 후기보기</li></a>
+                            <a href="board_free.html"><li>자유게시판보기</li></a>
+                            <a href="board_recommend.html"><li>제안 질문보기</li></a>
+                            <a href="board_best_answers.html"><li>모범 답안보기</li></a>
+                            <a href="board_total.html"><li class="sub-last-item">질문 답변보기</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="recruit_list.html">
+                    <li class="nav-sub-box">채용공고</li>
+                </a>
+                <a href="login.html">
+                    <li class="nav-sub-box">로그인</li>
+                </a>
+                <a href="join.html">
+                    <li class="nav-sub-box">회원가입</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
 
     <!-- 본문 시작 -> 여기서 작업하세요 -->
     <main>
+        <!-- 키워드 카드 팝업 -->
+        <div class="popup-card keyword-box">
+            <h2 class="popup-text">키워드를 선택하세요</h2>
+
+            <!-- 구분선 -->
+            <div class="line"></div>
+
+            <div class="keywords">
+                <div class="keyword">
+                    <input id="kw1" type="checkbox">
+                    <label for="kw1">백엔드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw2" type="checkbox">
+                    <label for="kw2">백엔aaa드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw3" type="checkbox">
+                    <label for="kw3">백드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw4" type="checkbox">
+                    <label for="kw4">백드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw5" type="checkbox">
+                    <label for="kw5">백드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw6" type="checkbox">
+                    <label for="kw6">백드</label>
+                </div>
+            </div>
+
+            <!-- 구분선 -->
+            <div class="line"></div>
+
+            <a href="interview_normal.html">
+                <button class="btn popup-btn">확인</button>
+            </a>
+        </div>
+
         <!-- 본문 타이틀 -->
         <div class="title">
             <div class="title-text">
                 <h1 class="text">면접모드선택</h1>
             </div>
         </div>
-    
-        
 
-        <!-- 메인화면 게시판 -->
-     <div class="mode">
-        
-        <div class="top_left" style="cursor: pointer;" onclick="location.href='interview_normal.html';">
-             일반면접모드
-        </div> 
+        <!-- 메인메뉴 -->
+        <div class="mode">
+            <div class="top_left btn" onclick="location.href='interview_normal.html';">
+                일반면접모드
+            </div> 
             
-        <div class="top_right" style="cursor: pointer;" onclick="location.href='interview_recruit.html';">
-            채용공고모드
-        </div>
-                    
-        <div class="bottom_right" style="cursor: pointer;" onclick="location.href='interview_keyword.html';">
-            맞춤 모드
-        </div>
+            <div class="top_right btn" onclick="location.href='interview_recruit.html';">
+                채용공고모드
+            </div>
+                        
+            <div class="bottom_right btn keyword-popup">
+                맞춤 모드
+            </div>
 
-        <div class="bottom_left" style="cursor: pointer;" onclick="location.href='interview_mentor.html';">
-            멘토모드
+            <div class="bottom_left btn" onclick="location.href='interview_mentor.html';">
+                멘토모드
+            </div>
         </div>
-
-    </div>
     </main>
 
     <!-- 꼬리 시작 -->
