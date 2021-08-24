@@ -17,6 +17,7 @@
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
+    <script defer src="js/pop_ups.js"></script>
     <!-- google login library-->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 
@@ -112,18 +113,19 @@
                 <input class="join-input holder" type="text" placeholder="https://git.com">
                  <!-- 구분선 -->
                  <div class="line"></div> 
-                <label for="">주요 기술</label>
+                <label for="">주요 기술<span class="sm-grey">3개</span><button type="button" class="popTechBtn" onclick="showTech()"></button></label>
                 <button class="btn dark" type="button">Java</button>
                 <button class="btn dark" type="button">Spring</button>
                 <button class="btn dark" type="button">MyBatis</button>
-                <label for="">기술 태그</label>
+                <label for="">기술 태그<span class="sm-grey">3개</span></label>
                 <button class="btn lightgrey" type="button">CSS</button>
                 <button class="btn lightgrey" type="button">HTML</button>
                 <button class="btn lightgrey" type="button">JavaScript</button>
                 <!-- 구분선 -->
                 <div class="line"></div> 
                 <label for="">희망 직군</label>
-                <button class="btn lightgrey" type="button">서버/백엔드</button>
+                <input type="radio" name="job-group" value="서버/백엔드"><span class="btn lightgrey">서버/백엔드</span>
+                <input type="radio" name="job-group" value="프론트엔드"><span class="btn lightgrey">프론트엔드</span>
                 
                
                 <div class="join-confirm">
@@ -133,6 +135,29 @@
 
            
         </form>
+
+        <div class="popTech" id="popTech">
+            <div class="popTechBg"></div>
+            <div class="popTechFg">
+                <h1>주요기술</h1>
+
+                <div class="tech-text">자신 있는 기술을 최대 3개 선택하세요.</div>
+                <div class="tech-component">
+                    <input type="checkbox" name="tech-group" value="CSS"><span class="btn lightgrey btnlabel">CSS</span>     
+                    <input type="checkbox" name="tech-group" value="HTML"><span class="btn lightgrey btnlabel">HTML</span> 
+                    <input type="checkbox" name="tech-group" value="JAVA"><span class="btn lightgrey btnlabel">JAVA</span> <br>
+                    <input type="checkbox" name="tech-group" value="JavaScript"><span class="btn lightgrey btnlabel">JavaScript</span> 
+                    <input type="checkbox" name="tech-group" value="Spring"><span class="btn lightgrey btnlabel">Spring</span> 
+                    <input type="checkbox" name="tech-group" value="MyBatis"><span class="btn lightgrey btnlabel">MyBatis</span> 
+                </div>
+                <div class="tech-text">그 밖의 기술 등록</div>
+                <input type="text" name="tech-group-etc" class="tech-group-etc" >
+                <div class="join-confirm">
+                    <input class="sub-admit-btn" type="button" onclick="javascript:subAdmit()" value="등록">
+                    <input class="sub-cancel-btn" type="button" onclick="javascript:subCancel()" value="취소">
+                </div>
+            </div>
+        </div>
  
         <!-- 본문 타이틀 -->
         <div class="title">

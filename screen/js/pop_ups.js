@@ -18,3 +18,16 @@ if (keywordPopups) {
         })    
     });
 }
+
+// join-person 주요기술 팝업
+function showTech(){
+    document.getElementById("popTech").style.display="block";
+}
+
+function subAdmit(){
+    document.getElementById("popTech").style.display="none";
+}
+
+function subCancel(){
+    document.getElementById("popTech").style.display='none';
+}
