@@ -16,12 +16,14 @@
     <!-- custom styles -->
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/board_review.css">
+    <link rel="stylesheet" href="style/pop_ups.css">
+    <link rel="stylesheet" href="style/interview_keyword.css">
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
+    <script defer src="js/pop_ups.js"></script>
 </head>
 <body>
-
     <!-- 머리말 시작 -->
     <header>
         <nav class="nav">
@@ -49,7 +51,7 @@
                             <!-- test class needs to be deleted -->
                             <a href="interview_normal.html"><li>일반면접모드</li></a>
                             <a href="interview_recruit.html"><li>채용공고모드</li></a>
-                            <a href="interview_keyword.html"><li>맞춤모드</li></a>
+                            <li class="keyword-popup btn">맞춤모드</li>
                             <a href="interview_mentor.html"><li class="sub-last-item">멘토모드</li></a>
                         </ul>
                     </li>
@@ -84,83 +86,116 @@
 
     <!-- 본문 시작 -> 여기서 작업하세요 -->
     <main>
-        <h1 class="page-title">채용공고</h1>
+        <!-- 키워드 카드 팝업 -->
+        <div class="popup-card keyword-box">
+            <h2 class="popup-text">키워드를 선택하세요</h2>
+
+            <!-- 구분선 -->
+            <div class="line"></div>
+
+            <div class="keywords">
+                <div class="keyword">
+                    <input id="kw1" type="checkbox">
+                    <label for="kw1">백엔드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw2" type="checkbox">
+                    <label for="kw2">백엔aaa드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw3" type="checkbox">
+                    <label for="kw3">백드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw4" type="checkbox">
+                    <label for="kw4">백드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw5" type="checkbox">
+                    <label for="kw5">백드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw6" type="checkbox">
+                    <label for="kw6">백드</label>
+                </div>
+            </div>
+
+            <!-- 구분선 -->
+            <div class="line"></div>
+
+            <a href="interview_normal.html">
+                <button class="btn popup-btn">확인</button>
+            </a>
+        </div>
+
+        <!-- 타이틀 더미 -->
+        <div class="dummy"></div>
+
+        <!-- 페이지 타이틀 -->
+        <h1 class="page-title-left">전체글보기</h1>
+        <div class="board-edit">
+            <div class="total-count"><span>00000</span>개의 글</div>
+            <div class="edit-btn-box">
+                <button class="btn edit-btn">임시저장 글 보기</button>
+                <button class="btn edit-btn">검색</button>
+                <button class="btn edit-btn">글쓰기</button>
+            </div>
+        </div>
 
         <!-- 메인화면 게시판 -->
-        <div class="board">
-            <div class="board-left">
+        <div class="board-container">
+            <div class="board-menu">
                 <ul>
-                    <a href="board_total.html"><li>질문 답변보기</li></a>
-                    
+                    <a href="board_write.html"><li>후기 작성하기</li></a>
                     <!-- 구분선 -->
                     <div class="line"></div>
-                    
-                    <a href="board_write.html"><li>후기 작성하기</li></a>
+                    <a href="board_total.html"><li>질문 답변보기</li></a>
                     <a href="board_review.html"><li>면접 후기보기</li></a>
                     <a href="board_free.html"><li>자유게시판보기</li></a>
-
+            
                     <!-- 구분선 -->
                     <div class="line"></div>
-                    
-                    <a href="board_interview_review.html"><li>인터뷰 후기보기</li></a>
-                    
-                    <!-- 구분선 -->
-                    <div class="line"></div>
-
+            
                     <a href="board_recommend.html"><li>제안 질문보기</li></a>
                     <a href="board_best_answers.html"><li>모범 답안보기</li></a>
                 </ul>
             </div>
-
-            <table class="board-table">
-                <thead class="board-head">
-                    <tr>
-                        <th>번호</th>
-                        <th>제목</th>
-                        <th>작성자</th>
-                        <th>작성일</th>
-                        <th>카테고리</th>
-                        <th>조회</th>
-                    </tr>
-                </thead>
-                <tbody class="board-body">
-                    <tr>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                    <tr>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                        <td>Lorem ipsum</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
+            <div class="board">
+                <table class="board-table">
+                    <thead class="board-head">
+                        <tr>
+                            <th>번호</th>
+                            <th>구분</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                            <th>조회</th>
+                            <th>좋아요</th>
+                        </tr>
+                    </thead>
+                    <tbody class="board-body">
+                        <tr>
+                            <td><a href="">01</a></td>
+                            <td><a href="">자유</a></td>
+                            <td><a href=""><span></span>Lorem ipsum</a></td>
+                            <td><a href="">Lorem ipsum</a></td>
+                            <td><a href="">Lorem ipsum</a></td>
+                            <td><a href="">80</a></td>
+                            <td><a href="">100</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="board-control">
+                    <ul>
+                        <a href=""><li class="pre"><button class="btn control-btn ">이전</button></li></a>
+                        <a href=""><li>1</li></a>
+                        <a href=""><li>2</li></a>
+                        <a href=""><li>3</li></a>
+                        <a href=""><li>4</li></a>
+                        <a href=""><li class="next"><button class="btn control-btn ">다음</button></li></a>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
 
