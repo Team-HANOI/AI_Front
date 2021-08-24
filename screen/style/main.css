@@ -401,7 +401,9 @@ footer p {
 /* 게시판 스타일 */
 .board {
     margin-top: 20px;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -421,6 +423,54 @@ footer p {
 
 .board .board-table th, td {
     padding: 10px;
+}
+
+.board-control {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-control ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    height: 30px;
+}
+
+.board-control ul li {
+    height: 20px !important;
+    line-height: 20px !important;
+    height: 20px;
+    min-width: 20px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.board-control ul li:hover, .board-control ul li:focus {
+    background-color: #B5EAEA;
+    border-radius: 50%;
+}
+
+.board-control ul a {
+    text-decoration: none;
+}
+
+.control-btn {
+    width: 50px;
+    background-color: transparent;
+    box-shadow: none !important;
+}
+
+.pre:hover, .pre:focus {
+    background-color: transparent !important;
+}
+
+.next:hover, .next:focus {
+    background-color: transparent !important;
 }
 
 /* 페이지타이틀 */

@@ -6,23 +6,60 @@
     list-style: none;
 }
 
-.recommendations li {
+.recommendations input::placeholder {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.recommendations > li {
+    height: 50px;
+    width: 100%;
     display: flex;
     align-items: center;
     position: relative;
     margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.recommendation-question {
+    background-color: #3C5186;
+    color: #fff;
+    height: 30px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.recommendation-keyword {
+    background-color: #3C5186;
+    color: #fff;
+    height: 30px;
+    border-radius: 5px;
 }
 
 .recommendations li .recommendations-user_icon {
-    height: 20px;
-    width: 20px;
-    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    margin: 0 20px;
+    border-radius: 50%;
 }
 
-.recommendations li .recommendations-count {
-    position: absolute;
-    right: 10px;
+.recommendations li .recommendations-btn, .register-btn {
+    font-size: 1.1rem;
+    height: 30px;
+    width: 180px;
+    margin-right: 20px;
+    background-color: #3C5186;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: #fff;
 }
+
+.keyword-choice {
+    margin-right: 20px;
+    width: 150px;
+}
+
 
 
 

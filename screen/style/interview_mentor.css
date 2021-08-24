@@ -1,6 +1,6 @@
 /* 메인화면 게시판 스타일 */
 .mentor-box { 
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .mentor {
@@ -60,4 +60,11 @@ li:nth-child(4).mentor-cover {
 .mentor-date {
   font-size: 12px;
   color: rgb(17, 83, 39);
+}
+
+.apply-mentee-btn {
+  height: 30px;
+  width: 100px;
+  background-color: #7C83FD;
+  color: #fff;
 }

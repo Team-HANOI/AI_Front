@@ -1,38 +1,57 @@
-/* 본문 스타일  */
-.norm{
+/* 메인화면 게시판 스타일 */
+
+.interview {
+    margin: 120px auto;
+    height: 600px;
+    width: 80%;
     display: flex;
-    background-color: rgb(250, 218, 218);
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-/* 메인화면 게시판 스타일 */
-.normal {
-    margin: 20px;
-    padding: auto;
-    height: 800px;
-    display: flex;
-    background-image: url('/AI_Front/screen/image/sky2.jpg');
     background-size: cover;
-    border-radius: 30px;
-    font-family: 'Gowun Dodum';
+    border-radius: 30px;   
 }
 
-.normal-question{
+.interview::before {
+    content: "";
+    height: 160vh;
+    width: 100%;
     position: absolute;
-    left: 120px;
-    top: 1550px;
-    color: #fff;
+    top: 0;
+    left: 0;
+    background-image: url('https://pngimg.com/uploads/question_mark/question_mark_PNG128.png');
+    opacity: .5;
 }
 
-.normal-answer{
+.interview-content {
+    position: relative;
+    width: 70%;
+}
+
+.interview-text {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #EEEEEE;
+}
+
+.interview input {
+    border: none;
+}
+
+.interview-time {
     position: absolute;
-    left: 120px;
-    top: 1600px;
-    color: #fff;  
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
 }
 
-#btn_group button{
+.interview-btn {
     width: 100px;
     height: 40px;
     border: 2px solid #d63384 #94d0cc;
@@ -40,19 +59,7 @@
     padding: 5px;
     border-radius: 10px;
     margin: 20px;
+    font-size: 1.1rem;
 }
-
-#btn_group {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    top: 1000px;
-    height: 1000px;
-    width: 1000px;
-    margin: 200px;
-}
-
-
 
 

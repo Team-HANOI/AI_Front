@@ -17,13 +17,14 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/recruit_list.css">
     <link rel="stylesheet" href="style/recruit_form.css">
-    <link rel="stylesheet" href="style/form_complete.css">
+    <link rel="stylesheet" href="style/pop_ups.css">
+    <link rel="stylesheet" href="style/interview_keyword.css">
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
+    <script defer src="js/pop_ups.js"></script>
 </head>
 <body>
-
     <!-- 머리말 시작 -->
     <header>
         <nav class="nav">
@@ -51,7 +52,7 @@
                             <!-- test class needs to be deleted -->
                             <a href="interview_normal.html"><li>일반면접모드</li></a>
                             <a href="interview_recruit.html"><li>채용공고모드</li></a>
-                            <a href="interview_keyword.html"><li>맞춤모드</li></a>
+                            <li class="keyword-popup btn">맞춤모드</li>
                             <a href="interview_mentor.html"><li class="sub-last-item">멘토모드</li></a>
                         </ul>
                     </li>
@@ -83,25 +84,66 @@
 
     <!-- 본문 시작 -> 여기서 작업하세요 -->
     <main>
-        <div class="complete-card">
-            <p class="complete-text">신청이 완료되었습니다.</p>
-            <a href="recruit_list.html">
-                <button class="btn complete-btn">확인</button>
+        <!-- 키워드 카드 팝업 -->
+        <div class="popup-card keyword-box">
+            <h2 class="popup-text">키워드를 선택하세요</h2>
+
+            <!-- 구분선 -->
+            <div class="line"></div>
+
+            <div class="keywords">
+                <div class="keyword">
+                    <input id="kw1" type="checkbox">
+                    <label for="kw1">백엔드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw2" type="checkbox">
+                    <label for="kw2">백엔aaa드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw3" type="checkbox">
+                    <label for="kw3">백드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw4" type="checkbox">
+                    <label for="kw4">백드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw5" type="checkbox">
+                    <label for="kw5">백드</label>
+                </div>
+                <div class="keyword">
+                    <input id="kw6" type="checkbox">
+                    <label for="kw6">백드</label>
+                </div>
+            </div>
+
+            <!-- 구분선 -->
+            <div class="line"></div>
+
+            <a href="interview_normal.html">
+                <button class="btn popup-btn">확인</button>
+            </a>
+        </div>
+
+        <!-- 신청완료 팝업 -->
+        <div class="popup-card">
+            <p class="popup-text">신청이 완료되었습니다.</p>
+            <a href="interview_mentor.html">
+                <button class="btn popup-btn">확인</button>
             </a>
         </div>
 
         <!-- 본문 타이틀 -->
         <div class="title">
-            <div class="title-text">
-                <h1 class="text">채용공고</h1>
-            </div>
+
         </div>
         
         <!-- 공고 -->
         <div class="card-box">
             <!-- 채용공고 -->
-        <form action="recruit_form_complete.html" method="POST" class="login join">
-            <h1 class="join-title">채용공고 작성하기</h1>
+        <form action="interview_mentor_form.html" method="GET" class="login join">
+            <h1 class="join-title">멘토 신청하기</h1>
             
             <!-- 구분선 -->
             <div class="line"></div>
@@ -110,31 +152,39 @@
                 <div class="post_page-box">
                     <div class="post_page-sub-box">
                         <label for="">회사이름</label>
-                        <input class="login-input" type="text" placeholder="">
+                        <input id="" class="login-input" type="text" placeholder="">
                     </div>
                     <div class="post_page-sub-box">
-                        <label for="">이메일</label>
-                        <input class="login-input" type="email" placeholder="">
+                        <label for="">날짜</label>
+                        <input id="" class="login-input" type="date" placeholder="">
                     </div>
                     <div class="post_page-sub-box">
-                        <label for="">URL</label>
-                        <input class="login-input" type="text" placeholder="">
+                        <label for="">시작시간</label>
+                        <input id="" class="login-input" type="time" placeholder="">
                     </div>
                     <div class="post_page-sub-box">
-                        <label for="">모집 포지션</label>
-                        <input class="login-input" type="text" placeholder="">
+                        <label for="">종료시간</label>
+                        <input id="" class="login-input" type="time" placeholder="">
                     </div>
                     <div class="post_page-sub-box">
-                        <label for="">경력</label>
-                        <input class="login-input" type="number" placeholder="ex) 1">
+                        <label for="">멘토링 제목</label>
+                        <input id="" class="login-input" type="text" placeholder="">
                     </div>
                     <div class="post_page-sub-box">
-                        <label for="">회사로고</label>
-                        <input class="login-input file-load" type="file" placeholder="">
+                        <label for="">멘토링 내용</label>
+                        <input id="" class="login-input" type="text" placeholder="">
+                    </div>
+                    <div class="post_page-sub-box">
+                        <label for="">멘토링 분야</label>
+                        <input id="" class="login-input" type="text" placeholder="">
+                    </div>
+                    <div class="post_page-sub-box">
+                        <label for="">멘토 소개</label>
+                        <textarea id="" class="" name="" cols="57" rows="10"></textarea>
                     </div>
                 </div>
 
-                <input class="login-btn btn" type="submit" value="채용공고 올리기">
+                <input class="login-btn btn" type="submit" value="신청하기">
             </div>
 
             <div class="login-text">
