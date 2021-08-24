@@ -147,6 +147,30 @@ a {
     cursor: pointer;
 }
 
+.mypage-right .mypage-content-list {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    border:0px red solid;
+    
+}
+.mypage-right .mypage-content-list a{
+    text-decoration: none;
+}
+
+.mypage-right .mypage-content-list ul {
+    margin-top:40px;
+    list-style: none;
+}
+
+.mypage-right .mypage-content-list ul li {
+    margin: 0 auto ;
+    padding : 30px 0 10px 20px;
+    border-bottom : 1px rgb(175, 175, 175) solid;
+}
+
+
+
 .dialyMT{
     display:block;
 }
