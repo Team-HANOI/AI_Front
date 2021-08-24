@@ -162,6 +162,8 @@ a {
     width: 100%;
     border: 0px red solid;
     text-align: center;
+    border-collapse:collapse;
+    border-spacing:0;
 }
 .mypageTb td{
     border-color:black;
@@ -180,6 +182,24 @@ a {
     vertical-align:middle;
 }
 
+.mypageTb .mypageTb-02ax{
+    text-align:left;
+    vertical-align:middle;
+    border-bottom:1px #333 solid;
+    font-size:16px;
+}
+
+.mypageTb .mypageTb-03ax{
+    text-align:right;
+    vertical-align:middle;
+    border-bottom:1px #333 solid;
+}
+
+.mypageTb .mypageTb-04ax{
+    text-align:right;
+    vertical-align:middle;
+}
+
 .mypageTb .mypageTb-0lax .tbCell{
     text-align:center;
     width:100%;
@@ -188,7 +208,7 @@ a {
     border-radius: 10px;
 }
 
-.mypageTb .mypageTb-0lax .mdfBtn, .mypageTb .mypageTb-0lax .dltBtn{
+.mypageTb .mypageTb-0lax .mdfBtn, .mypageTb .mypageTb-0lax .dltBtn,  .mypageTb .mypageTb-03ax .playBtn,  .mypageTb .mypageTb-04ax .playBtn{
     text-align:center;
     padding: 5px 20px;
     border-radius: 20px;
@@ -203,6 +223,12 @@ a {
 
 .mypageTb .mypageTb-0lax .dltBtn{
     background-color: rgb(207, 63, 55);
+}
+
+.mypageTb .mypageTb-03ax .playBtn, .mypageTb .mypageTb-04ax .playBtn{
+    border: 1px #333 solid;
+    background-color: #eee;
+    color:#000;
 }
 
 
