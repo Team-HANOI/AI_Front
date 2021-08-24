@@ -81,21 +81,39 @@ a {
 /* 프로파일 우측 정보란 스타일 */
 .mypage-right {
     width: 100%;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 100px;
-    text-align: right;
+    justify-content: space-between; */
+    padding-left: 100px;
+    text-align: left;
 }
 
 .mypage-right .mypage-content-title {
-    height: 100px;
-    line-height: 100px;
     width: 100%;
     text-align: left;
+    border:0px red solid;
+}
+
+.mypage-right .mypage-content-title p{
+    display: inline-block;
+    width: 80%;
+    height: 100px;
+    line-height: 100px;
+    border:0px blue solid;
     font-weight: bold;
     font-size:30px;
+}
+
+.mypage-right .mypage-content-title button{
+    text-align:center;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border-width: 0px;
+    color:#fff;
+    font-size:20px;
+    font-weight: 600;
+    background-color: rgb(100, 123, 255);
 }
 
 .mypage-right .mypage-content-subtitle {
@@ -129,5 +147,62 @@ a {
     cursor: pointer;
 }
 
+.dialyMT{
+    display:block;
+}
+.dateMT{
+    text-align:left;
+    font-size:20px;
+    color:#000;
+    font-weight: 600;
+}
+.mypageTb{
+    display:table;
+    margin: 10px 0;
+    width: 100%;
+    border: 0px red solid;
+    text-align: center;
+}
+.mypageTb td{
+    border-color:black;
+    border-style:solid;
+    border-width:0px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+    text-align: center;
+}
+
+.mypageTb .mypageTb-0lax{
+    text-align:center;
+    vertical-align:middle;
+}
+
+.mypageTb .mypageTb-0lax .tbCell{
+    text-align:center;
+    width:100%;
+    padding: 5px 20px;
+    border : 1px rgb(175, 175, 175) solid;
+    border-radius: 10px;
+}
+
+.mypageTb .mypageTb-0lax .mdfBtn, .mypageTb .mypageTb-0lax .dltBtn{
+    text-align:center;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border-width: 0px;
+    color:#fff;
+    font-weight: 600;
+}
+
+.mypageTb .mypageTb-0lax .mdfBtn{
+    background-color: rgb(100, 123, 255);
+}
+
+.mypageTb .mypageTb-0lax .dltBtn{
+    background-color: rgb(207, 63, 55);
+}
 
 
