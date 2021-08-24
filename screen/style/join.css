@@ -9,13 +9,19 @@ a, a:hover a:visited{
     color:rgb(112, 110, 110);
 }
 
-.join {
+.join-person {
     height: 700px;
+    width: 550px;
+}
+
+.join-business {
+    height: 800px;
     width: 550px;
 }
 
 .join-title {
     margin-bottom: 10px;
+    font-size:24px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight:400;
 }
@@ -23,7 +29,11 @@ a, a:hover a:visited{
     text-align: center;
 }
 
-.join-sub label {
+.join-holder {
+    width:60%;
+}
+
+.join-holder label {
     display: block;
     width: 100%;
     margin-top: 5px;
@@ -36,11 +46,11 @@ a, a:hover a:visited{
 
 .join-input {
     display: inline-block;
-    width: 80%;
     padding: 0 10px ;
     margin-bottom : 10px;
     border: 1px rgb(168, 166, 166) solid;
     border-radius : 10px;
+    
 }
 
 .google{
@@ -107,15 +117,23 @@ a, a:hover a:visited{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+
+
 .holder{
     width:100%;
     text-align:left;
     padding:10px 5px;
 }
 
+.join-confirm{
+    width: 100%;
+    text-align: center;
+}
+
 .join-btn{
+    display: inline-block;
     margin-top:20px;
-    width: 70%;
+    width: 80%;
     padding: 0px 5px 5px 0;
     margin-bottom : -10px;
     border: 0px rgb(168, 166, 166) solid;
@@ -138,4 +156,64 @@ a, a:hover a:visited{
     font-weight:300;
     font-family: 'Noto Sans KR', sans-serif;
     text-decoration-line:none;
+}
+
+
+/* 기업회원 회원가입 화면 */
+.profile-text{
+    width:100%;
+    text-align:left;
+    padding-left:120px;
+    font-size:11px;
+    font-weight:300;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+.profile-outer{
+    text-align:center;
+}
+
+.profile-inner{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    text-align:center;
+}
+
+.profile-img{
+    border-radius: 60px;
+}
+
+.profile-img-name{
+    font-size:11px;
+    color:cadetblue;
+}
+
+.profile-upload-btn{
+    margin-top:5px;
+    padding:3px 10px;
+    border: 1px #eee solid;
+    border-radius: 20px;
+    background-color: dimgray;
+    color: #fff;
+    box-shadow: 1px 1px 1px dimgray;
+}
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border:none;
+}
+
+.dark{
+    color : #fff;
+    background-color: dimgray;
+    
+}
+
+.lightgrey{
+    color: #000;
+    background-color: #eee;
 }
