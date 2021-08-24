@@ -170,6 +170,19 @@ a {
 }
 
 
+.mypage-right .mypage-content-profile ul {
+    margin-top:40px;
+    list-style: none;
+}
+
+.mypage-right .mypage-content-profile ul li {
+    margin: 0 auto ;
+    padding : 30px 0 30px 20px;
+    border-top : 1px rgb(175, 175, 175) solid;
+}
+
+
+
 
 .dialyMT{
     display:block;
@@ -323,7 +336,7 @@ a {
 }
 
 
-.pwreset-input {
+.pwreset-input, .join-input {
     display: inline-block;
     padding: 0 30px ;
     margin-bottom : 10px;
@@ -338,4 +351,107 @@ a {
     width:100%;
     text-align:left;
     padding:10px 5px;
+}
+
+.pfText{
+    font-weight:500;
+}
+
+.pfInfo{
+    display: block;
+    width:100%;
+    color:#333;
+    font-weight:300;
+    font-size:14px;
+
+}
+
+.pfIntro{
+    display:block;
+    width:100%;
+    line-height:30px;
+    margin-top:10px;
+    border: 1px #eee solid;
+}
+.pfTextLight{
+    color:#333;
+    font-weight:300;
+
+}
+
+
+.btn {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border:none;
+    font-size:12px;
+    font-weight:400;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.dark{
+    color : #fff;
+    background-color: dimgray;
+    
+}
+
+.lightgrey{
+    color: #000;
+    background-color: #eee;
+}
+
+.sm-grey{
+    padding-left:10px;
+    font-size:10px;
+    font-weight:400;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:dimgray;
+
+}
+
+.pfInfoOuter{
+    width:100%;
+    text-align: center;
+    min-height:200px;
+    border : 0px red solid;
+
+}
+
+.pfInfoInner{
+    display: inline-block;
+    border : 0x blue solid;
+    vertical-align: middle;
+}
+
+.pfInfoInnerLeft{
+    width:30%;
+    float:left;
+    text-align: left;
+    border : 0px green solid;
+
+}
+
+.pfInfoInnerRight{
+    width:60%;
+    height:100px;
+    margin-top:50px;
+    float:right;
+    border : 0px orange solid;
+    vertical-align: middle;
+    text-align: right;
+    
+
+}
+
+.pfExp {
+    width:80%;
+    height:60px;
+    padding-left:10px;
+    margin-top:0px;
+    vertical-align: middle;
+}
+
+.pfExpText{
+
+    padding-right:20px;
 }
