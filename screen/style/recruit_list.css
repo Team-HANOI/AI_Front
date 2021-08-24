@@ -85,11 +85,12 @@
 .post .post-btn {
 	height: 50px;
 	width: 150px;
-	background-color: #94D0CC;
+	background-color: #04a096;
 	border-radius: 10px;
 	margin-right: 50px;
 	border: none;
 	color: #fff;
+	font-size: 1.1rem;
 }
 
 button {
