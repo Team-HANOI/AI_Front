@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;900&display=swap');
+
 body {
     overflow: hidden;
+}
+
+a, a:hover a:visited{ 
+    text-decoration: none; 
+    color:rgb(112, 110, 110);
 }
 
 .join {
@@ -9,16 +16,48 @@ body {
 
 .join-title {
     margin-bottom: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+}
+.join-sub {
+    text-align: center;
 }
 
-.login-sub label {
+.join-sub label {
     display: block;
     width: 100%;
     margin-top: 5px;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:rgb(62, 65, 73);
+    font-size:14px;
+    font-weight:400;
 }
 
-.login-input {
-    width: 100%;
+.join-input {
+    display: inline-block;
+    width: 80%;
+    padding: 0 10px ;
+    margin-bottom : 10px;
+    border: 1px rgb(168, 166, 166) solid;
+    border-radius : 10px;
+}
+
+.google{
+    padding-top: 10px;
+}
+.github{
+    padding-top: 10px;
+    color: #fff;
+    background-color:rgb(62, 65, 73);
+}
+
+.github-logo{
+    -webkit-filter: invert(100%)
+}
+
+.github-text{
+    padding-top:0px;
 }
 
 .join-check {
@@ -36,6 +75,67 @@ body {
     margin-right: 5px;
 }
 
+.join-check label {
+    margin-top:-3px;
+    text-align:left;
+    color:rgb(112, 110, 110);
+    font-size:11px;
+    font-weight:300;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 .login-text a {
     text-decoration: none;
+}
+
+
+.logo-text {
+    display:inline-block;
+    padding-bottom: 10px;
+    vertical-align: middle;
+
+}
+
+.alterText{
+    display:inline-block;
+    width:100%;
+    padding:0;
+    text-align:center;
+    color:rgb(112, 110, 110);
+    font-size:11px;
+    font-weight:300;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.holder{
+    width:100%;
+    text-align:left;
+    padding:10px 5px;
+}
+
+.join-btn{
+    margin-top:20px;
+    width: 70%;
+    padding: 0px 5px 5px 0;
+    margin-bottom : -10px;
+    border: 0px rgb(168, 166, 166) solid;
+    border-radius : 10px;
+    color:#fff;
+    background-color:rgb(35, 80, 206);
+    font-size: 18px;
+    font-weight:500;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.join-text{
+    display:inline-block;
+    margin-top:20px;
+    width:100%;
+    padding:0;
+    text-align:center;
+    color:rgb(112, 110, 110);
+    font-size:11px;
+    font-weight:300;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-decoration-line:none;
 }
