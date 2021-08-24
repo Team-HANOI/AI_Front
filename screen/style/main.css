@@ -543,6 +543,7 @@ footer p {
 }
 
 .btn {
+    border-radius: 5px;
     cursor: pointer;
     border: none;
     box-shadow: 1px 1px 0 0 rgba(0, 0, 0, .3), 1px 1px 0 0 rgba(0, 0, 0, .3);
