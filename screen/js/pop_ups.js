@@ -31,3 +31,17 @@ function subAdmit(){
 function subCancel(){
     document.getElementById("popTech").style.display='none';
 }
+
+
+// login-person 비밀번호 오류 경고 팝업
+function showPwAlert(){
+    document.getElementById("popPwAlert").style.display="block";
+}
+
+function subPwAdmit(){
+    document.getElementById("popPwAlert").style.display="none";
+}
+
+function subPwCancel(){
+    document.getElementById("popPwAlert").style.display='none';
+}

@@ -42,15 +42,16 @@ a, a:hover a:visited{
     color:rgb(62, 65, 73);
     font-size:14px;
     font-weight:400;
+    text-decoration: none;
 }
 
 .join-input {
     display: inline-block;
-    padding: 0 10px ;
+    padding: 0 30px ;
     margin-bottom : 10px;
     border: 1px rgb(168, 166, 166) solid;
     border-radius : 10px;
-    
+    width: 100%;
 }
 
 .google{
@@ -92,6 +93,7 @@ a, a:hover a:visited{
     font-size:11px;
     font-weight:300;
     font-family: 'Noto Sans KR', sans-serif;
+    text-decoration: none;
 }
 
 .login-text a {
@@ -133,8 +135,8 @@ a, a:hover a:visited{
 .join-btn{
     display: inline-block;
     margin-top:20px;
-    width: 80%;
-    padding: 0px 5px 5px 0;
+    width: 60%;
+    padding: 5px 5px 8px 5px;
     margin-bottom : -10px;
     border: 0px rgb(168, 166, 166) solid;
     border-radius : 10px;
