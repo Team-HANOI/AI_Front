@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Alpaka</title>
+    <link rel="shortcut icon" href="favicon/favicon1.ico">
+
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/join.css">
+
+    <!-- java script -->
+    <script defer src="js/index.js"></script>
+    <!-- google login library-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</head>
+<body>
+
+    <!-- 머리말 시작 -->
+    <header>
+        <nav class="nav">
+            <!-- 사이트 명 -->
+            <ul class="nav-sub nav-title">
+                <a href="main.html">
+                    <li class="nav-sub-li">
+                        <span class="nav-title-mr">Mr.</span>
+                        <span class="nav-title-alpaca">
+                            Alpaca
+                        </span>
+                        <div class="line"></div>
+                    </li>
+                </a>
+            </ul>
+
+            <!-- 네비게이션 메뉴 -->
+            <ul class="nav-sub nav-menu">
+                <a href="main.html">
+                    <li>홈</li>
+                </a>
+                <a href="interview_main.html">
+                    <li class="nav-sub-box">면접하기
+                        <ul class="nav-sub-sub">
+                            <!-- test class needs to be deleted -->
+                            <a href="interview_normal.html"><li>일반면접모드</li></a>
+                            <a href="interview_recruit.html"><li>채용공고모드</li></a>
+                            <a href="interview_keyword.html"><li>맞춤모드</li></a>
+                            <a href="interview_mentor.html"><li class="sub-last-item">멘토모드</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="board_total.html">
+                    <li class="nav-sub-box">커뮤니티
+                        <ul class="nav-sub-sub">
+                            <a href="board_write.html"><li>후기 작성하기</li></a>
+                            <a href="board_interview_review.html"><li>인터뷰 후기보기</li></a>
+                            <a href="board_free.html"><li>자유게시판보기</li></a>
+                            <a href="board_recommend.html"><li>제안 질문보기</li></a>
+                            <a href="board_best_answers.html"><li>모범 답안보기</li></a>
+                            <a href="board_total.html"><li class="sub-last-item">질문 답변보기</li></a>
+                        </ul>
+                    </li>
+                </a>
+                <a href="recruit_list.html">
+                    <li class="nav-sub-box">채용공고</li>
+                </a>
+                <a href="login.html">
+                    <li class="nav-sub-box">로그인</li>
+                </a>
+                <a href="join.html">
+                    <li class="nav-sub-box">회원가입</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 본문 시작 -> 여기서 작업하세요 -->
+    <main>
+        <!-- 로그인 -->
+        <form action="" method="POST" class="login join-business"> 
+            <h1 class="join-title">기업 회원가입</h1>
+            <span class>로고 이미지</span>
+            <div class="join-sub">
+                <!--로고 이미지-->
+                <div class="profile-outer">
+                    <div class="profile-inner">
+                        <img class="profile-img" width="60px" height="60px" src="https://media-exp1.licdn.com/dms/image/C560BAQFhLg-t7O-vWw/company-logo_200_200/0/1519867699220?e=2159024400&v=beta&t=FH0Kso7uqTQv8C3aGfKAF9xDF6OgsmYmk1mg8ZHTNNI">
+                        <span class="profile-img-name">corp-ci.png</span>
+                        <button class="profile-upload-btn">upload</button>
+                    </div>
+                </div>
+            </div>    
+                
+                
+            <div class="join-holder">    
+                <!-- 구분선 -->
+                <div class="line"></div> 
+                <div style="clear:both"></div>
+
+                <label for="">회사명</label>
+                <input class="join-input holder" type="text" placeholder="회사명">
+                <label for="">회사 이메일</label>
+                <input class="join-input holder" type="email" placeholder="회사 이메일">
+                <label for="">비밀번호</label>
+                <input class="join-input holder" type="password" placeholder="비밀번호">
+                <label for="">비밀번호 확인</label>
+                <input class="join-input holder" type="password" placeholder="비밀번호 확인">
+                <label for="">담당자 성명</label>
+                <input class="join-input holder" type="text" placeholder="담당자 성명">
+                <label for="">담당자 전화번호</label>
+                <input class="join-input holder" type="text" placeholder="담당자 전화번호">
+                
+                <div class="join-check">
+                    <input type="checkbox" id="term_1">
+                    <label for="term_1">
+                        <small>이용약관 및 개인접 처리방침에 동의합니다.</small>
+                    </label>
+                </div>
+                <div class="join-check"> 
+                    <input type="checkbox" id="term_2">
+                    <label for="term_2">
+                        <small>마케팅 활용 동의 및 광고 수신에 동의합니다.</small>
+                    </label>
+                </div>
+                <div class="join-confirm">
+                    <input class="join-btn" type="submit" value="기업회원 가입하기">
+                </div>
+            </div>
+
+            <div class="join-text">
+                <a href=""><small>이용약관</small></a> |
+                <a href=""><small>개인정보 처리방침</small></a> |
+                <a href=""><small>FAQ / 문의</small></a>
+            </div>
+        </form>
+ 
+        <!-- 본문 타이틀 -->
+        <div class="title">
+            <div class="title-text">
+                <h1 class="text">인터뷰</h1>
+                <h3 class="text">인터뷰</h3>
+            </div>
+        </div>
+
+        <div class="intro">
+            <p class="intro-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo sint soluta quibusdam corrupti saepe dolor?</p>
+        </div>
+
+        <!-- 구분선 -->
+        <div class="line"></div>
+
+        <!-- 메인화면 게시판 -->
+        <div class="board">
+            <table class="board-table">
+                <thead class="board-head">
+                    <tr>
+                        <th>Lorem ipsum</th>
+                        <th>Lorem ipsum</th>
+                        <th>Lorem ipsum</th>
+                        <th>Lorem ipsum</th>
+                        <th>Lorem ipsum</th>
+                        <th>Lorem ipsum</th>
+                    </tr>
+                </thead>
+                <tbody class="board-body">
+                    <tr>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+    <!-- 꼬리 시작 -->
+    <footer>
+        <!-- 깃 허브 링크 -->
+        <div class="developers">
+            <a class="hayoon" href="https://github.com/orgs/Team-HANOI/dashboard">
+                <i class="fab fa-github-square fa-4x"></i>
+                <p class="developers-id">Team-HANOI</p>
+            </a>
+            <a class="hayoon" href="https://github.com/HAYOON26">
+                <i class="fab fa-github-square fa-4x developers-git"></i>
+                <p class="developers-id">HAYOON26</p>
+            </a>
+            <a class="hayoon" href="https://github.com/AngryPig123">
+                <i class="fab fa-github-square fa-4x developers-git"></i>
+                <p class="developers-id">AngryPig123</p>
+            </a>
+            <a class="hayoon" href="https://github.com/hs95blue">
+                <i class="fab fa-github-square fa-4x developers-git"></i>
+                <p class="developers-id">hs95blue</p>
+            </a>
+            <a class="hayoon" href="https://github.com/jin-co">
+                <i class="fab fa-github-square fa-4x developers-git"></i>
+                <p class="developers-id">jin-co</p>
+            </a>
+        </div>
+
+        <!-- copyright, 소개글 -->
+        <div class="footer-text">
+            <p>
+                &copy;2021
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos earum odit similique ratione ipsam quisquam nam architecto veritatis expedita porro pariatur nemo modi neque officia eligendi reprehenderit doloribus, optio blanditiis.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
