@@ -7,9 +7,11 @@
 }
 
 .detail-row {
+    height: auto;
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin: 10px 0;
+    align-items: center;
 }
 
 .detail-row .btn {

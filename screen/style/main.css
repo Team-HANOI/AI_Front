@@ -52,7 +52,7 @@ body {
 
 /* 머리말 스타일 */
 header {
-    height: 100px;
+    height: 150px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -134,7 +134,7 @@ header {
     margin: 0;
     background-color: var(--ft-color-black);
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 90px;
 }
 
@@ -260,6 +260,21 @@ header {
 
 .nav .nav-menu li:hover > .nav-sub-sub {
     visibility: visible;
+}
+
+/* my page link 스타일 */
+.my-page-link {
+    height: 50px;
+    width: 50px;
+    background-color: #420516;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* 본문 스타일  */
@@ -555,5 +570,5 @@ footer p {
 
 /* 타이틀 더미 */
 .dummy {
-    margin-top: 130px;
+    margin-top: 180px;
 }

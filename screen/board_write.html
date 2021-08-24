@@ -16,11 +16,14 @@
     <!-- custom styles -->
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/board_write.css">
+    <link rel="stylesheet" href="style/board_detail.css">
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
 </head>
 <body>
+    <!-- 더미 타이틀 -->
+    <div class="dummy"></div>
 
     <!-- 머리말 시작 -->
     <header>
@@ -82,16 +85,47 @@
     <!-- 본문 시작 -> 여기서 작업하세요 -->
     <main>
         <!-- 페이지 타이틀 -->
-        <h1 class="page-title">글쓰기</h1>
+        <h1 class="page-title-left">글쓰기</h1>
+
+        <!-- 구분선 -->
+        <div class="line"></div>
         
         <!-- 글쓰기 폼 -->
         <div class="board">
             <form action="" method="" class="write">
-                <label for="title">제목</label>
-                <input type="text" class="write-text" id="title">
+                <div class="detail-row">
+                    <div>
+                        <label for="">포지션</label> 
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <div>
+                        <label for="">회사명</label>
+                        <input type="text">
+                    </div>             
+                </div>
+
+                <div class="detail-row">
+                    <div>
+                        <label for="title">제목</label>
+                        <input type="text" id="title">
+                    </div>
+                </div>
+
                 <label for="context">내용</label>
-                <input type="textarea" class="write-text" id="context">
-                <button type="submit" class="write-btn">등록</button>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                <div class="detail-row">
+                    <button type="submit" class="btn write-btn">파일첨부</button>
+                    <button type="submit" class="btn write-btn">초기화</button>
+                    
+                    <button type="submit" class="btn write-btn">
+                        <a href="board_temporary.html">임시저장</a>
+                    </button>
+                    <button type="submit" class="btn write-btn">등록</button>
+                </div>
             </form>
         </div>
         </div>
