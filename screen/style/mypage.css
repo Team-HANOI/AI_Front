@@ -1,17 +1,17 @@
 /* 프로파일 컨테이터 스타일 */
-*{
+* {
     font-family: 'Noto Sans KR', sans-serif; 
 }
 
 a {
     color : #000;
 }
+
 .mypage {
     height: 100%;
     width: 80%;
     margin: 150px auto 0 auto;
     display: flex;
-
 }
 
 /* 프로파일 좌측 메뉴 스타일 */
@@ -95,7 +95,7 @@ a {
     border:0px red solid;
 }
 
-.mypage-right .mypage-content-title p{
+.mypage-right .mypage-content-title p {
     display: inline-block;
     width: 70%;
     height: 100px;
@@ -105,7 +105,7 @@ a {
     font-size:30px;
 }
 
-.mypage-right .mypage-content-title button{
+.mypage-right .mypage-content-title button {
     text-align:center;
     padding: 10px 30px;
     border-radius: 30px;
@@ -180,8 +180,6 @@ a {
     padding : 30px 0 30px 20px;
     border-top : 1px rgb(175, 175, 175) solid;
 }
-
-
 
 
 .dialyMT{
