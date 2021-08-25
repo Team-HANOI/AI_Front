@@ -156,7 +156,7 @@ header {
 
 .nav .nav-menu:hover::before {
     content: "";
-    height: 500px;
+    height: 450px;
     width: 100%;
     position: absolute;
     top: 100%;
@@ -348,7 +348,7 @@ main {
 }
 
 .row.intro {
-    text-align: center;
+    justify-content: center;
 }
 
 .row .row {
@@ -379,10 +379,6 @@ main {
     min-height: 0px;
 }
 
-.row.second a:last-child .item {
-    background-color: rebeccapurple;
-}
-
 .row.second .row {
     justify-content: space-between;
     width: 70%;
@@ -393,11 +389,10 @@ main {
     padding: 10px;
 }
 
-.row.third  .row {
+.row.third .row {
     width: auto;
-    margin: 0 auto;
+    margin: 10px auto;
 }
-
 
 /* 꼬리 스타일 */
 footer {
