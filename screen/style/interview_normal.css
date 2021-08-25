@@ -20,7 +20,8 @@
     top: 0;
     left: 0;
     background-image: url('https://pngimg.com/uploads/question_mark/question_mark_PNG128.png');
-    opacity: .5;
+    opacity: .2;
+    z-index: -1;
 }
 
 .interview-content {

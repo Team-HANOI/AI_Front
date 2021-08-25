@@ -1,0 +1,33 @@
+/* 게시판 글쓰기 스타일 */
+
+.total-btn {
+    height: 50px;
+    width: 200px;
+    font-size: 1.2rem;
+    position: relative;
+    top: 20px;
+}
+
+.detail-row .detail-row {
+    width: 100%;
+}
+
+.detail-row {
+    width: 90%;
+}
+
+.detail-row > div {
+    height: 80px;
+    width: 100%;
+    margin: 10px 0; 
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightblue;
+    font-size: 1.2rem;
+}
+
+.detail-row .btn {
+    height: 50px !important;
+}
