@@ -43,3 +43,24 @@
     border-radius: 50%;
 }
 
+.write-btn {
+    width: 5%;
+}
+
+.mypage {
+    margin-top: 0 !important;
+}
+
+a {
+    color: #000;
+}
+
+.total-btn {
+    height: 50px;
+    width: 200px;
+    font-size: 1.2rem;
+    position: relative;
+    top: 20px;
+    font-size: 1.1rem !important;
+}
+

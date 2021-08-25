@@ -21,10 +21,12 @@
     <script defer src="js/index.js"></script>
 </head>
 <body>
-
     <!-- 머리말 시작 -->
     <header>
         <nav class="nav">
+            <!-- my page 링크 -->
+            <a href="mypage-profile.html" class="my-page-link">M</a>
+
             <!-- 사이트 명 -->
             <ul class="nav-sub nav-title">
                 <a href="main.html">
@@ -49,7 +51,7 @@
                             <!-- test class needs to be deleted -->
                             <a href="interview_normal.html"><li>일반면접모드</li></a>
                             <a href="interview_recruit.html"><li>채용공고모드</li></a>
-                            <a href="interview_keyword.html"><li>맞춤모드</li></a>
+                            <li class="keyword-popup btn">맞춤모드</li>
                             <a href="interview_mentor.html"><li class="sub-last-item">멘토모드</li></a>
                         </ul>
                     </li>
@@ -69,11 +71,21 @@
                 <a href="recruit_list.html">
                     <li class="nav-sub-box">채용공고</li>
                 </a>
-                <a href="login.html">
-                    <li class="nav-sub-box">로그인</li>
+                <a href="login_person.html">
+                    <li class="nav-sub-box">로그인
+                        <ul class="nav-sub-sub">
+                            <a href="login_person.html"><li>일반회원</li></a>
+                            <a href="login_business.html"><li class="sub-last-item">기업회원</li></a>
+                        </ul>
+                    </li>
                 </a>
-                <a href="join.html">
-                    <li class="nav-sub-box">회원가입</li>
+                <a href="join_person.html">
+                    <li class="nav-sub-box">회원가입
+                        <ul class="nav-sub-sub">
+                            <a href="join_person.html"><li>일반회원</li></a>
+                            <a href="join_business.html"><li class="sub-last-item">기업회원</li></a>
+                        </ul>
+                    </li>
                 </a>
             </ul>
         </nav>
@@ -81,6 +93,9 @@
 
     <!-- 본문 시작 -> 여기서 작업하세요 -->
     <main>
+        <!-- 더미 타이틀 -->
+        <div class="dummy"></div>
+        
         <!-- 마이 페이지 -->
         <div class="mypage">
             <!-- 유저정보 좌측 메뉴 정보 -->

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="style/board_recommend.css">
     <link rel="stylesheet" href="style/pop_ups.css">
     <link rel="stylesheet" href="style/interview_keyword.css">
+    <link rel="stylesheet" href="style/board_detail.css">
+    <link rel="stylesheet" href="style/mypage.css">
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
@@ -129,14 +131,27 @@
         <div class="dummy"></div>
 
         <!-- 질문제안 -->
-        <div class="interview-review">
-            <h1 class="page-title-left">질문제안 게시판</h1>
-
-            <!-- 구분선 -->
-            <div class="line"></div>
+        <div class="interview-review board-total mypage">
+            <div class="board-container mypage-left">
+                <!-- 게시판 메뉴 -->
+                <div class="mypage-left-bottom">
+                    <ul>
+                        <a href="board_review.html"><li>면접후기게시판</li></a>
+                        <a href="board_free.html"><li>자유게시판</li></a>
+                        <a href="board_total.html"><li>전체질문</li></a>
+                        <a href="board_recommend.html"><li>면접질문</li></a>
+                        <a href="board_best_answers.html"><li>모범답안</li></a>
+                    </ul>
+                </div>
+            </div>
             
-            <ul class="recommendations board">
-                <!-- 질문제안 올리기 -->
+            <ul class="recommendations board mypage-right">
+                <h1 class="page-title-left">질문제안 게시판</h1>
+
+                <!-- 구분선 -->
+                <div class="line"></div>
+
+                <!-- **질문제안 올리기 -->
                 <li>
                     <div class="author recommedations-sub">
                         <img src="https://img.icons8.com/ios-glyphs/60/000000/ball-point-pen.png" class="recommendations-user_icon"/>
@@ -153,11 +168,12 @@
                         <button class="btn register-btn">등록하기</button>
                     </div>
                 </li>
-                
+                <!-- **질문제안 올리기 -->
+
                 <!-- 구분선 -->
                 <div class="line"></div>
 
-                <!-- 질문제안 게시판 -->
+                <!-- **질문제안 게시판 -->
                 <li class="register-questions">
                     <div class="author recommedations-sub">
                         <img class="recommendations-user_icon" src="image/sky.jpg" alt="">
@@ -250,7 +266,8 @@
                         <small class="register-date">등록일: <span>21. 1. 2.</span></small>
                     </div>
                 </li>
-
+                <!-- **질문제안 게시판 -->
+                
                 <div class="board-control">
                     <ul>
                         <a href=""><li class="pre"><button class="btn control-btn ">이전</button></li></a>

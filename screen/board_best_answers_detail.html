@@ -15,11 +15,11 @@
 
     <!-- custom styles -->
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/board_review.css">
     <link rel="stylesheet" href="style/interview_result.css">
     <link rel="stylesheet" href="style/board_detail.css">
     <link rel="stylesheet" href="style/pop_ups.css">
     <link rel="stylesheet" href="style/interview_keyword.css">
+    <link rel="stylesheet" href="style/mypage.css">
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
@@ -29,6 +29,9 @@
     <!-- 머리말 시작 -->
     <header>
         <nav class="nav">
+            <!-- my page 링크 -->
+            <a href="mypage-profile.html" class="my-page-link">M</a>
+
             <!-- 사이트 명 -->
             <ul class="nav-sub nav-title">
                 <a href="main.html">
@@ -73,11 +76,21 @@
                 <a href="recruit_list.html">
                     <li class="nav-sub-box">채용공고</li>
                 </a>
-                <a href="login.html">
-                    <li class="nav-sub-box">로그인</li>
+                <a href="login_person.html">
+                    <li class="nav-sub-box">로그인
+                        <ul class="nav-sub-sub">
+                            <a href="login_person.html"><li>일반회원</li></a>
+                            <a href="login_business.html"><li class="sub-last-item">기업회원</li></a>
+                        </ul>
+                    </li>
                 </a>
-                <a href="join.html">
-                    <li class="nav-sub-box">회원가입</li>
+                <a href="join_person.html">
+                    <li class="nav-sub-box">회원가입
+                        <ul class="nav-sub-sub">
+                            <a href="join_person.html"><li>일반회원</li></a>
+                            <a href="join_business.html"><li class="sub-last-item">기업회원</li></a>
+                        </ul>
+                    </li>
                 </a>
             </ul>
         </nav>
@@ -133,82 +146,42 @@
         <!-- 타이틀 더미 -->
         <div class="dummy"></div>
 
-        <!-- 페이지 타이틀 -->
-        <h1 class="page-title-left">전체글보기</h1>
-
-        <!-- 구분선 -->
-        <div class="line"></div>
-
         <!-- 메인화면 게시판 -->
-        <div class="board-container interview-result">
-            <!-- 인터뷰 결과 메뉴 -->
-            <div class="board-menu">
-                <ul>
-                    <a href="board_write.html">
-                        <li class="btn">질문 
-                            <span> 1.</span>
-                        </li>
-                    </a>
-                    <a href="board_total.html">
-                        <li class="btn">질문 
-                            <span> 2.</span>
-                        </li>
-                    </a>
-                    <a href="board_review.html">
-                        <li class="btn">질문 
-                            <span> 3.</span>
-                        </li>
-                    </a>
-                    <a href="board_free.html">
-                        <li class="btn">질문 
-                            <span> 4.</span>
-                        </li>
-                    </a>
-                    <a href="board_recommend.html">
-                        <li class="btn">질문 
-                            <span> 5.</span>
-                        </li>
-                    </a>
-                    <a href="board_best_answers.html">
-                        <li class="btn">질문 
-                            <span> 6.</span>
-                        </li>
-                    </a>
-                    <a href="board_best_answers.html">
-                        <li class="btn">질문 
-                            <span> 7.</span>
-                        </li>
-                    </a>
-                    <a href="board_best_answers.html">
-                        <li class="btn">질문 
-                            <span> 8.</span>
-                        </li>
-                    </a>
-                    <a href="board_best_answers.html">
-                        <li class="btn">질문 
-                            <span> 9.</span>
-                        </li>
-                    </a>
-                    <a href="board_best_answers.html">
-                        <li class="btn">질문 
-                            <span>10.</span>
-                    </li>
-                </a>
-                </ul>
+        <div class="mypage">
+            <div class="board-container mypage-left">
+                <!-- 메뉴 -->
+                <div class="mypage-left-bottom">
+                    <ul>
+                        <a href="board_review.html"><li>면접후기게시판</li></a>
+                        <a href="board_free.html"><li>자유게시판</li></a>
+                        <a href="board_total.html"><li>전체질문</li></a>
+                        <a href="board_recommend.html"><li>면접질문</li></a>
+                        <a href="board_best_answers.html"><li>모범답안</li></a>
+                    </ul>
+                </div>
             </div>
+            
+            <!-- 질문 상세 -->
+            <div class="board mypage-right">
+                <!-- 페이지 타이틀 -->
+                <div class="board-edit">
+                    <h1 class="page-title-left">모범답안 상세보기</h1>
+                    <a href="board_total.html">
+                        <button class="btn total-btn">전체답안 페이지로</button>
+                    </a>
+                </div> 
 
-            <!-- 인터뷰 결과 내용 -->
-            <div class="board">
+                <!-- 구분선 -->
+                <div class="line"></div>
+                    
+                <!-- ** 질문과련 데이터 불러오는 란 -->
                 <h2>질문 <span>1.</span></h2> 
                 
                 <div class="detail-row result-btn-box">
                     <button class="btn">최신순</button>
                     <button class="btn">추천순</button>
-                    <a href="board_best_answers.html">
-                        <button class="btn">모범답안 페이지로</button>
-                    </a>
                 </div>
-                
+                    
                 <div class="detail-row">
                     <div>
                         <img class="recommendations-user_icon" src="image/sky.jpg" alt="">
@@ -220,6 +193,7 @@
                     <p class="item">좋아요: <span>11</span></p>
                     <p class="item">등록일: <span>11.11.</span></p>
                 </div>
+                <!-- ** 질문과련 데이터 불러오는 란 -->
             </div>
         </div>
     </main>
