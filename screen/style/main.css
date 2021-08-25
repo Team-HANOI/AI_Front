@@ -1,17 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gowun+Dodum&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Comfortaa:wght@700&family=Do+Hyeon&family=Gowun+Dodum&family=Permanent+Marker&display=swap');
-
-/* backups */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Gowun+Dodum&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Comfortaa:wght@700&family=Gowun+Dodum&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Comfortaa:wght@700&family=Gowun+Dodum&family=Permanent+Marker&display=swap');
 
 :root {
     --ft-color-black: #000;
@@ -46,12 +33,16 @@
 }
 
 body {
-    font-family: 'Gowun Dodum', 'poppins', sans-serif, serif;
     color: var(--ft-color-black);
+}
+
+main {
+    font-family: 'Noto Sans KR', sans-serif; 
 }
 
 /* 머리말 스타일 */
 header {
+    font-family: 'Gowun Dodum', 'poppins', sans-serif, serif;
     height: 150px;
     width: 100%;
     position: fixed;
@@ -347,13 +338,66 @@ main {
     }
 }
 
-.intro {
-    height: 300px;
+.row {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+
+.row.intro {
+    text-align: center;
+}
+
+.row .row {
+    width: 70%;
+}
+
+.row-title {
+    margin: 30px 0 20px;
+    padding-left: 150px;
+    font-size: 2rem;
+}
+
+.row .item {
+    height: 200px;
+    width: 200px;
+    margin: 0 10px;
+}
+
+.col {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    letter-spacing: 1px;
+    flex-direction: column;
 }
+
+.row .col .row {
+    min-height: 0px;
+}
+
+.row.second a:last-child .item {
+    background-color: rebeccapurple;
+}
+
+.row.second .row {
+    justify-content: space-between;
+    width: 70%;
+    margin: 10px 0;
+}
+
+.row.second .row p {
+    padding: 10px;
+}
+
+.row.third  .row {
+    width: auto;
+    margin: 0 auto;
+}
+
 
 /* 꼬리 스타일 */
 footer {
@@ -521,6 +565,7 @@ footer p {
 
 /* 게시판 상부 글 편집 컨트롤러 */
 .board-edit {
+    width: 100%;
     display: flex;
     padding: 5px 20px;
     font-size: 1.1rem;
@@ -539,11 +584,13 @@ footer p {
 
 /* 페이지타이틀 */
 .page-title {
+    width: 100%;
     text-align: center;
     margin: 50px 0 20px;
 }
 
 .page-title-left {
+    width: 100%;
     text-align: left;
     margin: 50px 0 20px 20px;
 }
@@ -568,7 +615,18 @@ footer p {
     transform: scale(.98);
 }
 
+.btn:focus {
+    text-decoration: none;
+}
+
 /* 타이틀 더미 */
 .dummy {
     margin-top: 180px;
 }
+
+input[type="text"]:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+

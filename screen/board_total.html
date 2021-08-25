@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="style/board_detail.css">
     <link rel="stylesheet" href="style/pop_ups.css">
     <link rel="stylesheet" href="style/interview_keyword.css">
+    <link rel="stylesheet" href="style/mypage.css">
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
@@ -29,6 +30,9 @@
     <!-- 머리말 시작 -->
     <header>
         <nav class="nav">
+            <!-- my page 링크 -->
+            <a href="mypage-profile.html" class="my-page-link">M</a>
+
             <!-- 사이트 명 -->
             <ul class="nav-sub nav-title">
                 <a href="main.html">
@@ -73,11 +77,21 @@
                 <a href="recruit_list.html">
                     <li class="nav-sub-box">채용공고</li>
                 </a>
-                <a href="login.html">
-                    <li class="nav-sub-box">로그인</li>
+                <a href="login_person.html">
+                    <li class="nav-sub-box">로그인
+                        <ul class="nav-sub-sub">
+                            <a href="login_person.html"><li>일반회원</li></a>
+                            <a href="login_business.html"><li class="sub-last-item">기업회원</li></a>
+                        </ul>
+                    </li>
                 </a>
-                <a href="join.html">
-                    <li class="nav-sub-box">회원가입</li>
+                <a href="join_person.html">
+                    <li class="nav-sub-box">회원가입
+                        <ul class="nav-sub-sub">
+                            <a href="join_person.html"><li>일반회원</li></a>
+                            <a href="join_business.html"><li class="sub-last-item">기업회원</li></a>
+                        </ul>
+                    </li>
                 </a>
             </ul>
         </nav>
@@ -133,44 +147,41 @@
         <!-- 타이틀 더미 -->
         <div class="dummy"></div>
 
-        <!-- 페이지 타이틀 -->
-        <div class="board-edit">
-            <h1 class="page-title-left">전체질문 게시판</h1>
-            <button class="btn total-btn">키워드 검색</button>
-        </div>
-        <!-- 구분선 -->
-        <div class="line"></div>
-
         <!-- 메인화면 게시판 -->
-        <div class="board-container">
-
-            <!-- 게시판 메뉴 -->
-            <div class="board-menu">
-                <ul>
-                    <a href="board_write.html"><li>후기 작성하기</li></a>
-
-                    <!-- 구분선 -->
-                    <div class="line"></div>
-                    <a href="board_total.html"><li>질문 답변보기</li></a>
-                    <a href="board_review.html"><li>면접 후기보기</li></a>
-                    <a href="board_free.html"><li>자유게시판보기</li></a>
-            
-                    <!-- 구분선 -->
-                    <div class="line"></div>
-            
-                    <a href="board_recommend.html"><li>제안 질문보기</li></a>
-                    <a href="board_best_answers.html"><li>모범 답안보기</li></a>
-                </ul>
+        <div class="board-total mypage">
+            <div class="board-container mypage-left">
+                <!-- 게시판 메뉴 -->
+                <div class="mypage-left-bottom">
+                    <ul>
+                        <a href="board_review.html"><li>면접후기게시판</li></a>
+                        <a href="board_free.html"><li>자유게시판</li></a>
+                        <a href="board_total.html"><li>전체질문</li></a>
+                        <a href="board_recommend.html"><li>면접질문</li></a>
+                        <a href="board_best_answers.html"><li>모범답안</li></a>
+                    </ul>
+                </div>
             </div>
 
             <!-- 게시판 -->
-            <div class="board">
+            <div class="board mypage-right">
+                <!-- 페이지 타이틀 -->
+                <div class="board-edit">
+                    <h1 class="page-title-left">전체질문</h1>
+                    <button class="btn total-btn">키워드 검색</button>
+                </div>
+
+                <!-- 구분선 -->
+                <div class="line"></div>
+
                 <div class="board-table detail-row">
                     <div>
-                        <p>질문 
-                            <span>1.</span>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, fugit?</span>
-                        </p>
+                        <a href="board_total_detail.html" title="클릭 시 상세 페이지로 이동합니다.">
+                            <p>질문 
+                                <span>1.</span>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, fugit?</span>
+                            </p>
+                        </a>
+                        
                         <div>
                             <button class="btn">전체답안</button>
                             <button class="btn">모범답안</button>
@@ -191,6 +202,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </main>
 
     <!-- 꼬리 시작 -->

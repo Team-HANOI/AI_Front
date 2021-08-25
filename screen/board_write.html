@@ -17,17 +17,18 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/board_write.css">
     <link rel="stylesheet" href="style/board_detail.css">
+    <link rel="stylesheet" href="style/mypage.css">
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
 </head>
 <body>
-    <!-- 더미 타이틀 -->
-    <div class="dummy"></div>
-
     <!-- 머리말 시작 -->
     <header>
         <nav class="nav">
+            <!-- my page 링크 -->
+            <a href="mypage-profile.html" class="my-page-link">M</a>
+
             <!-- 사이트 명 -->
             <ul class="nav-sub nav-title">
                 <a href="main.html">
@@ -52,7 +53,7 @@
                             <!-- test class needs to be deleted -->
                             <a href="interview_normal.html"><li>일반면접모드</li></a>
                             <a href="interview_recruit.html"><li>채용공고모드</li></a>
-                            <a href="interview_keyword.html"><li>맞춤모드</li></a>
+                            <li class="keyword-popup btn">맞춤모드</li>
                             <a href="interview_mentor.html"><li class="sub-last-item">멘토모드</li></a>
                         </ul>
                     </li>
@@ -72,11 +73,21 @@
                 <a href="recruit_list.html">
                     <li class="nav-sub-box">채용공고</li>
                 </a>
-                <a href="login.html">
-                    <li class="nav-sub-box">로그인</li>
+                <a href="login_person.html">
+                    <li class="nav-sub-box">로그인
+                        <ul class="nav-sub-sub">
+                            <a href="login_person.html"><li>일반회원</li></a>
+                            <a href="login_business.html"><li class="sub-last-item">기업회원</li></a>
+                        </ul>
+                    </li>
                 </a>
-                <a href="join.html">
-                    <li class="nav-sub-box">회원가입</li>
+                <a href="join_person.html">
+                    <li class="nav-sub-box">회원가입
+                        <ul class="nav-sub-sub">
+                            <a href="join_person.html"><li>일반회원</li></a>
+                            <a href="join_business.html"><li class="sub-last-item">기업회원</li></a>
+                        </ul>
+                    </li>
                 </a>
             </ul>
         </nav>
@@ -84,50 +95,67 @@
 
     <!-- 본문 시작 -> 여기서 작업하세요 -->
     <main>
-        <!-- 페이지 타이틀 -->
-        <h1 class="page-title-left">글쓰기</h1>
+        <!-- 타이틀 더미 -->
+        <div class="dummy"></div>
 
-        <!-- 구분선 -->
-        <div class="line"></div>
-        
         <!-- 글쓰기 폼 -->
-        <div class="board">
-            <form action="" method="" class="write">
-                <div class="detail-row">
-                    <div>
-                        <label for="">포지션</label> 
-                        <input type="text">
+        <div class="board-total mypage">
+            <div class="board-container mypage-left">
+                <!-- 게시판 메뉴 -->
+                <div class="mypage-left-bottom">
+                    <ul>
+                        <a href="board_review.html"><li>면접후기게시판</li></a>
+                        <a href="board_free.html"><li>자유게시판</li></a>
+                        <a href="board_total.html"><li>전체질문</li></a>
+                        <a href="board_recommend.html"><li>면접질문</li></a>
+                        <a href="board_best_answers.html"><li>모범답안</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="board mypage-right">
+                <!-- 페이지 타이틀 -->
+                <h1 class="page-title-left">글쓰기</h1>
+
+                <!-- 구분선 -->
+                <div class="line"></div>
+                
+                <form action="" method="" class="write">
+                    <div class="detail-row">
+                        <div>
+                            <label for="">포지션</label> 
+                            <input type="text">
+                        </div>
                     </div>
-                </div>
-
-                <div class="detail-row">
-                    <div>
-                        <label for="">회사명</label>
-                        <input type="text">
-                    </div>             
-                </div>
-
-                <div class="detail-row">
-                    <div>
-                        <label for="title">제목</label>
-                        <input type="text" id="title">
+                
+                    <div class="detail-row">
+                        <div>
+                            <label for="">회사명</label>
+                            <input type="text">
+                        </div>             
                     </div>
-                </div>
-
-                <label for="context">내용</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-
-                <div class="detail-row">
-                    <input type="file">
-
-                    <button type="submit" class="btn write-btn">초기화</button>
-                    
-                    <button type="submit" class="btn write-btn">
-                        <a href="board_temporary.html">임시저장</a>
-                    </button>
-                    <button type="submit" class="btn write-btn">등록</button>
-                </div>
-            </form>
+                
+                    <div class="detail-row">
+                        <div>
+                            <label for="title">제목</label>
+                            <input type="text" id="title">
+                        </div>
+                    </div>
+                
+                    <label for="context">내용</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                
+                    <div class="detail-row">
+                        <input type="file">
+                
+                        <button type="submit" class="btn write-btn">초기화</button>
+                        
+                        <button type="submit" class="btn write-btn">
+                            <a href="board_temporary.html">임시저장</a>
+                        </button>
+                        <button type="submit" class="btn write-btn">등록</button>
+                    </div>
+                </form>
+            </div>
         </div>
         </div>
     </main>

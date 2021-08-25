@@ -44,7 +44,7 @@ tr th {
 }
 
 tr th:nth-child(3) {
-    width: 500px;
+    min-width: 600px;
 }
 
 tr td:nth-child(3) {

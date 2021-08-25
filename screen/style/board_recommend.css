@@ -96,6 +96,12 @@
     padding: 0 10px;
 }
 
+/* 게시판 하부 컨트롤 margin 조절 */
+.board-control {
+    margin-top: 50px !important ;
+}
+
+
 
 
 
