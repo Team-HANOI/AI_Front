@@ -16,6 +16,8 @@
     <!-- custom styles -->
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/board_review.css">
+    <link rel="stylesheet" href="style/board_total.css">
+    <link rel="stylesheet" href="style/board_detail.css">
     <link rel="stylesheet" href="style/pop_ups.css">
     <link rel="stylesheet" href="style/interview_keyword.css">
 
@@ -132,21 +134,21 @@
         <div class="dummy"></div>
 
         <!-- 페이지 타이틀 -->
-        <h1 class="page-title-left">전체글보기</h1>
         <div class="board-edit">
-            <div class="total-count"><span>00000</span>개의 글</div>
-            <div class="edit-btn-box">
-                <button class="btn edit-btn">임시저장 글 보기</button>
-                <button class="btn edit-btn">검색</button>
-                <button class="btn edit-btn">글쓰기</button>
-            </div>
+            <h1 class="page-title-left">전체질문 게시판</h1>
+            <button class="btn total-btn">키워드 검색</button>
         </div>
+        <!-- 구분선 -->
+        <div class="line"></div>
 
         <!-- 메인화면 게시판 -->
         <div class="board-container">
+
+            <!-- 게시판 메뉴 -->
             <div class="board-menu">
                 <ul>
                     <a href="board_write.html"><li>후기 작성하기</li></a>
+
                     <!-- 구분선 -->
                     <div class="line"></div>
                     <a href="board_total.html"><li>질문 답변보기</li></a>
@@ -160,40 +162,23 @@
                     <a href="board_best_answers.html"><li>모범 답안보기</li></a>
                 </ul>
             </div>
+
+            <!-- 게시판 -->
             <div class="board">
-                <table class="board-table">
-                    <thead class="board-head">
-                        <tr>
-                            <th>번호</th>
-                            <th>구분</th>
-                            <th>제목</th>
-                            <th>작성자</th>
-                            <th>작성일</th>
-                            <th>조회</th>
-                            <th>좋아요</th>
-                        </tr>
-                    </thead>
-                    <tbody class="board-body">
-                        <tr>
-                            <td><a href="">01</a></td>
-                            <td><a href="">자유</a></td>
-                            <td><a href="board_total_detail.html"><span></span>Lorem ipsum</a></td>
-                            <td><a href="">Lorem ipsum</a></td>
-                            <td><a href="">Lorem ipsum</a></td>
-                            <td><a href="">80</a></td>
-                            <td><a href="">100</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="">01</a></td>
-                            <td><a href="">자유</a></td>
-                            <td><a href=""><span></span>Lorem ipsum</a></td>
-                            <td><a href="">Lorem ipsum</a></td>
-                            <td><a href="">Lorem ipsum</a></td>
-                            <td><a href="">80</a></td>
-                            <td><a href="">100</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="board-table detail-row">
+                    <div>
+                        <p>질문 
+                            <span>1.</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, fugit?</span>
+                        </p>
+                        <div>
+                            <button class="btn">전체답안</button>
+                            <button class="btn">모범답안</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 하부 컨트롤 -->
                 <div class="board-control">
                     <ul>
                         <a href=""><li class="pre"><button class="btn control-btn ">이전</button></li></a>
