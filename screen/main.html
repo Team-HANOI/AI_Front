@@ -12,17 +12,25 @@
 
     <!-- custom styles -->
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/page_loading.css">
     <link rel="stylesheet" href="style/pop_ups.css">
     <link rel="stylesheet" href="style/interview_keyword.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/join.css">
 
+    <!-- jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
     <!-- java script -->
     <script defer src="js/index.js"></script>
     <script defer src="js/pop_ups.js"></script>
+
 </head>
 <body>
     <!-- 머리말 시작 -->
     <header>
+        <div class="sun">
+            <img src="https://pngimg.com/uploads/sun/sun_PNG13439.png" alt="">
+        </div>
         <nav class="nav">
             <!-- my page 링크 -->
             <a href="mypage-profile.html" class="my-page-link">M</a>
@@ -74,8 +82,8 @@
                 <a href="login_person.html">
                     <li class="nav-sub-box">로그인
                         <ul class="nav-sub-sub">
-                            <a href="login_person.html"><li>일반회원</li></a>
-                            <a href="login_business.html"><li class="sub-last-item">기업회원</li></a>
+                            <li class="join-individual btn">일반회원</li>
+                            <li class="sub-last-item join-com btn">기업회원</li>
                         </ul>
                     </li>
                 </a>
@@ -93,6 +101,8 @@
 
     <!-- 본문 시작 -> 여기서 작업하세요 -->
     <main>
+        <!-- 팝업배경 더미 -->
+        <div class="popup-dummy"></div>
         <!-- 키워드 카드 팝업 -->
         <div class="popup-card keyword-box">
             <h2 class="popup-text">키워드를 선택하세요</h2>
@@ -133,6 +143,64 @@
             <a href="interview_normal.html">
                 <button class="btn popup-btn">확인</button>
             </a>
+        </div>
+
+        <div class="popup-card join-business-form">
+            <form action="" method="POST" class="login join-business"> 
+                <h1 class="join-title">기업 회원가입</h1>
+                <span class>로고 이미지</span>
+                <div class="join-sub">
+                    <!--로고 이미지-->
+                    <div class="profile-outer">
+                        <div class="profile-inner">
+                            <img class="profile-img" width="60px" height="60px" src="https://media-exp1.licdn.com/dms/image/C560BAQFhLg-t7O-vWw/company-logo_200_200/0/1519867699220?e=2159024400&v=beta&t=FH0Kso7uqTQv8C3aGfKAF9xDF6OgsmYmk1mg8ZHTNNI">
+                            <span class="profile-img-name">corp-ci.png</span>
+                            <button class="btn profile-upload-btn">upload</button>
+                        </div>
+                    </div>
+                </div>    
+                    
+                <div class="join-holder">    
+                    <!-- 구분선 -->
+                    <div class="line"></div> 
+                    <div style="clear:both"></div>
+    
+                    <label for="">회사명</label>
+                    <input class="join-input holder" type="text" placeholder="회사명">
+                    <label for="">회사 이메일</label>
+                    <input class="join-input holder" type="email" placeholder="회사 이메일">
+                    <label for="">비밀번호</label>
+                    <input class="join-input holder" type="password" placeholder="비밀번호">
+                    <label for="">비밀번호 확인</label>
+                    <input class="join-input holder" type="password" placeholder="비밀번호 확인">
+                    <label for="">담당자 성명</label>
+                    <input class="join-input holder" type="text" placeholder="담당자 성명">
+                    <label for="">담당자 전화번호</label>
+                    <input class="join-input holder" type="text" placeholder="담당자 전화번호">
+                    
+                    <div class="join-check">
+                        <input type="checkbox" id="term_1">
+                        <label for="term_1">
+                            <small>이용약관 및 개인접 처리방침에 동의합니다.</small>
+                        </label>
+                    </div>
+                    <div class="join-check"> 
+                        <input type="checkbox" id="term_2">
+                        <label for="term_2">
+                            <small>마케팅 활용 동의 및 광고 수신에 동의합니다.</small>
+                        </label>
+                    </div>
+                    <div class="join-confirm">
+                        <input class="btn join-btn" type="submit" value="기업회원 가입하기">
+                    </div>
+                </div>
+    
+                <div class="join-text">
+                    <a href=""><small>이용약관</small></a> |
+                    <a href=""><small>개인정보 처리방침</small></a> |
+                    <a href=""><small>FAQ / 문의</small></a>
+                </div>
+            </form>
         </div>
 
         <!-- 본문 타이틀 -->

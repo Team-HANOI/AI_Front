@@ -1,12 +1,12 @@
-body {
+/* body {
     overflow: hidden;
     
-}
+} */
 
 a, a:active, a:hover {
     text-decoration: none;
 }
-
+/* 
 body::before {
     content: "";
     height: 200vh;
@@ -15,7 +15,7 @@ body::before {
     background-color: grey;
     opacity: .5;
     z-index: 1;
-}
+} */
 
 .login {
     height: 400px;
@@ -129,8 +129,6 @@ body::before {
     color:#000;
     text-decoration: none;
 }
-
-
 
 /* 비밀번호 오류 기술 */
 .popPwAlertBtn{

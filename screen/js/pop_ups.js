@@ -1,8 +1,7 @@
 // 폼 작성완료 메시지 효과
 const submit = document.querySelector('.login-btn')
-
 if (submit) {
-    submit.addEventListener('click', (e) => {
+    submit.addEventListener('click', () => {
         e.preventDefault()
         document.body.classList.add('complete')
     })
@@ -12,10 +11,20 @@ if (submit) {
 const keywordPopups = document.querySelectorAll('.keyword-popup')
 if (keywordPopups) {
     keywordPopups.forEach(keywordPopup => {
-        keywordPopup.addEventListener('click', (e) => {
-            console.log('hi')
-            document.body.classList.add('complete')
-        })    
+        keywordPopup.addEventListener('click', () => {
+            document.body.classList.add('show-keyword-popup')
+        })
+    });
+}
+
+// 기업회원 가입 팝업효과
+const joinComs = document.querySelectorAll('.join-com')
+if (joinComs) {
+    joinComs.forEach(joinCom => {
+        joinCom.addEventListener('click', () => {
+            console.log('hh')
+            document.body.classList.add('show-join-com-popup')
+        })
     });
 }
 

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="style/board_review.css">
     <link rel="stylesheet" href="style/pop_ups.css">
     <link rel="stylesheet" href="style/interview_keyword.css">
+    <link rel="stylesheet" href="style/mypage.css">
+    <link rel="stylesheet" href="style/board_detail.css">
 
     <!-- java script -->
     <script defer src="js/index.js"></script>
@@ -27,6 +29,9 @@
     <!-- 머리말 시작 -->
     <header>
         <nav class="nav">
+            <!-- my page 링크 -->
+            <a href="mypage-profile.html" class="my-page-link">M</a>
+
             <!-- 사이트 명 -->
             <ul class="nav-sub nav-title">
                 <a href="main.html">
@@ -71,11 +76,21 @@
                 <a href="recruit_list.html">
                     <li class="nav-sub-box">채용공고</li>
                 </a>
-                <a href="login.html">
-                    <li class="nav-sub-box">로그인</li>
+                <a href="login_person.html">
+                    <li class="nav-sub-box">로그인
+                        <ul class="nav-sub-sub">
+                            <a href="login_person.html"><li>일반회원</li></a>
+                            <a href="login_business.html"><li class="sub-last-item">기업회원</li></a>
+                        </ul>
+                    </li>
                 </a>
-                <a href="join.html">
-                    <li class="nav-sub-box">회원가입</li>
+                <a href="join_person.html">
+                    <li class="nav-sub-box">회원가입
+                        <ul class="nav-sub-sub">
+                            <a href="join_person.html"><li>일반회원</li></a>
+                            <a href="join_business.html"><li class="sub-last-item">기업회원</li></a>
+                        </ul>
+                    </li>
                 </a>
             </ul>
         </nav>
@@ -86,6 +101,8 @@
 
     <!-- 본문 시작 -> 여기서 작업하세요 -->
     <main>
+        <!-- 팝업배경 더미 -->
+        <div class="popup-dummy"></div>
         <!-- 키워드 카드 팝업 -->
         <div class="popup-card keyword-box">
             <h2 class="popup-text">키워드를 선택하세요</h2>
@@ -132,34 +149,42 @@
         <div class="dummy"></div>
 
         <!-- 페이지 타이틀 -->
-        <h1 class="page-title-left">전체글보기</h1>
         <div class="board-edit">
             <div class="total-count"><span>00000</span>개의 글</div>
             <div class="edit-btn-box">
                 <button class="btn edit-btn">검색</button>
-                <a href="board_write.html"><button class="btn edit-btn">글쓰기</button></a>
+                <a href="board_write.html">
+                    <button class="btn edit-btn">글쓰기</button>
+                </a>
             </div>
         </div>
 
+        <!-- 구분선 -->
+        <div class="line"></div>
+
         <!-- 메인화면 게시판 -->
-        <div class="board-container">
-            <div class="board-menu">
-                <ul>
-                    <a href="board_write.html"><li>후기 작성하기</li></a>
-                    <!-- 구분선 -->
-                    <div class="line"></div>
-                    <a href="board_total.html"><li>질문 답변보기</li></a>
-                    <a href="board_review.html"><li>면접 후기보기</li></a>
-                    <a href="board_free.html"><li>자유게시판보기</li></a>
-            
-                    <!-- 구분선 -->
-                    <div class="line"></div>
-            
-                    <a href="board_recommend.html"><li>제안 질문보기</li></a>
-                    <a href="board_best_answers.html"><li>모범 답안보기</li></a>
-                </ul>
+        <div class="mypage">
+            <div class="board-container mypage-left">
+                <!-- 게시판 메뉴 -->
+                <div class="mypage-left-bottom">
+                    <ul>
+                        <a href="board_review.html"><li class="activated">면접후기게시판</li></a>
+                        <a href="board_free.html"><li>자유게시판</li></a>
+                        <a href="board_total.html"><li>전체질문</li></a>
+                        <a href="board_recommend.html"><li>면접질문</li></a>
+                        <a href="board_best_answers.html"><li>모범답안</li></a>
+                    </ul>
+                </div>
             </div>
-            <div class="board">
+
+            <!-- 게시판 -->
+            <div class="board mypage-right">
+                <!-- 페이지 타이틀 -->
+                <h1 class="page-title-left">임시저장된 글</h1>
+
+                <!-- 구분선 -->
+                <div class="line"></div>
+                
                 <table class="board-table">
                     <thead class="board-head">
                         <tr>
@@ -176,16 +201,7 @@
                         <tr>
                             <td><a href="">01</a></td>
                             <td><a href="">자유</a></td>
-                            <td><a href="board_total_detail.html"><span></span>Lorem ipsum</a></td>
-                            <td><a href="">Lorem ipsum</a></td>
-                            <td><a href="">Lorem ipsum</a></td>
-                            <td><a href="">80</a></td>
-                            <td><a href="">100</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="">01</a></td>
-                            <td><a href="">자유</a></td>
-                            <td><a href=""><span></span>Lorem ipsum</a></td>
+                            <td><a href="board_review_detail.html"><span></span>Lorem ipsum</a></td>
                             <td><a href="">Lorem ipsum</a></td>
                             <td><a href="">Lorem ipsum</a></td>
                             <td><a href="">80</a></td>
