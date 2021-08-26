@@ -8,22 +8,55 @@ if (submit) {
 }
 
 // 키워드 팝업효과
-const keywordPopups = document.querySelectorAll('.keyword-popup')
-if (keywordPopups) {
-    keywordPopups.forEach(keywordPopup => {
-        keywordPopup.addEventListener('click', () => {
-            document.body.classList.add('show-keyword-popup')
-        })
-    });
+const keywordPopup = document.querySelector('.keyword-popup')
+if (keywordPopup) {
+    keywordPopup.addEventListener('click', () => {
+        document.body.classList.add('show-keyword-popup')
+    })
 }
 
 // 기업회원 가입 팝업효과
-const joinComs = document.querySelectorAll('.join-com')
-if (joinComs) {
-    joinComs.forEach(joinCom => {
-        joinCom.addEventListener('click', () => {
-            console.log('hh')
-            document.body.classList.add('show-join-com-popup')
+const joinCom = document.querySelector('.join-com')
+if (joinCom) {
+    joinCom.addEventListener('click', () => {
+        console.log(joinCom)
+        console.log(document.body.className)
+        document.body.classList.add('show-join-com-popup')
+        console.log(document.body.className)
+    })
+}
+
+// 개인회원 가입 팝업효과
+const joinIndividua = document.querySelector('.ttest')
+if (joinIndividua) {
+    joinIndividua.addEventListener('click', () => {
+        document.body.classList.add('show-join-indi-popup')
+        const confirms = document.querySelectorAll('.join-confirm .join-btn')
+        confirms.forEach(confirm => {
+            confirm.addEventListener('click', () => {
+                document.body.classList.remove('show-join-indi-popup')
+                document.body.classList.add('show-join-indi-extra-popup')
+            })
+        });
+    })
+}
+
+// 기업회원 로그인 팝업효과
+const loginCom = document.querySelector('.login-com')
+if (loginCom) {
+    loginCom.addEventListener('click', () => {
+        console.log(document.body.className)
+        document.body.classList.add('show-login-com-popup')
+        console.log(document.body.className)
+    })
+}
+
+// 개인회원 로그인 팝업효과
+const loginIndividuals = document.querySelectorAll('.login-individual')
+if (loginIndividuals) {
+    loginIndividuals.forEach(loginIndividual => {
+        loginIndividual.addEventListener('click', () => {
+            document.body.classList.add('show-login-individual-popup')
         })
     });
 }

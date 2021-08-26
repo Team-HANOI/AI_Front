@@ -59,7 +59,7 @@
                             <!-- test class needs to be deleted -->
                             <a href="interview_normal.html"><li>일반면접모드</li></a>
                             <a href="interview_recruit.html"><li>채용공고모드</li></a>
-                            <li class="keyword-popup btn">맞춤모드</li>
+                            <a><li class="keyword-popup btn">맞춤모드</li></a>
                             <a href="interview_mentor.html"><li class="sub-last-item">멘토모드</li></a>
                         </ul>
                     </li>
@@ -79,22 +79,26 @@
                 <a href="recruit_list.html">
                     <li class="nav-sub-box">채용공고</li>
                 </a>
-                <a href="login_person.html">
-                    <li class="nav-sub-box">로그인
+            
+                <li class="nav-sub-box">로그인
+                    <a>
                         <ul class="nav-sub-sub">
-                            <li class="join-individual btn">일반회원</li>
-                            <li class="sub-last-item join-com btn">기업회원</li>
+                        <a><li class="login-individual btn">일반회원</li></a>
+                        <a><li class="sub-last-item login-com btn">기업회원</li>
+                        </a>
                         </ul>
-                    </li>
-                </a>
-                <a href="join_person.html">
-                    <li class="nav-sub-box">회원가입
+                    </a>
+                </li>
+            
+                <li class="nav-sub-box">회원가입
+                    <a>
                         <ul class="nav-sub-sub">
-                            <a href="join_person.html"><li>일반회원</li></a>
-                            <a href="join_business.html"><li class="sub-last-item">기업회원</li></a>
+                            <a><li class="join-individual btn">일반회원</li>
+                            </a>
+                            <a><li class="sub-last-item join-com btn">기업회원</li></a>
                         </ul>
-                    </li>
-                </a>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -144,7 +148,8 @@
                 <button class="btn popup-btn">확인</button>
             </a>
         </div>
-
+        
+        <!-- 기업회원가입 팝업 -->
         <div class="popup-card join-business-form">
             <form action="" method="POST" class="login join-business"> 
                 <h1 class="join-title">기업 회원가입</h1>
@@ -199,6 +204,264 @@
                     <a href=""><small>이용약관</small></a> |
                     <a href=""><small>개인정보 처리방침</small></a> |
                     <a href=""><small>FAQ / 문의</small></a>
+                </div>
+            </form>
+        </div>
+
+        <!-- 일반회원가입 팝업 -->
+        <div class="popup-card join-individual-form">
+            <form action="" method="POST" class="login join-person">
+                <h1 class="join-title">계정 만들기</h1>
+                <div class="join-sub">
+                    <button class="join-input google btn" >
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="abcRioButtonSvg google-logo">
+                            <g>
+                                <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                                <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                                <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                                <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                                <path fill="none" d="M0 0h48v48H0z"></path>
+                            </g>
+                        </svg> 
+                        <span class="logo-text">Google로 계속하기</span>
+                    </button>
+                    <div style="clear:both"></div>
+                    <button class="join-input github btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="github-logo">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span class="logo-text github-text">Github로 계속하기</span>
+                    </button>
+                    <div style="clear:both"></div>
+                    <span class="alterText">Google/Github로 계정을 만들면 이용약관에<br>동의한 것으로 처리됩니다.</span>
+                </div>    
+                    
+                <div class="join-holder">    
+                    <!-- 구분선 -->
+                    <div class="line"></div> 
+                    <div style="clear:both"></div>
+                    <label for="">이름</label>
+                    <input class="join-input holder" type="email" placeholder="이름">
+                    <label for="">이메일</label>
+                    <input class="join-input holder" type="text" placeholder="이메일">
+                    <label for="">비밀번호</label>
+                    <input class="join-input holder" type="text" placeholder="비밀번호">
+                    <label for="">비밀번호 확인</label>
+                    <input class="join-input holder" type="text" placeholder="비밀번호 확인">
+                    
+                    <div class="join-check">
+                        <input type="checkbox" id="term_1">
+                        <label for="term_1">
+                            <small>이용약관 및 개인접 처리방침에 동의합니다.</small>
+                        </label>
+                    </div>
+                    <div class="join-check">
+                        <input type="checkbox" id="term_2">
+                        <label for="term_2">
+                            <small>마케팅 활용 동의 및 광고 수신에 동의합니다.</small>
+                        </label>
+                    </div>
+                    <div class="join-confirm">
+                        <input class="join-btn btn" type="button" value="일반회원 가입하기">
+                    </div>
+                </div>
+    
+                <div class="join-text">
+                    <a href=""><small>이용약관</small></a> |
+                    <a href=""><small>개인정보 처리방침</small></a> |
+                    <a href=""><small>FAQ / 문의</small></a>
+                </div>
+            </form>
+        </div>
+
+        <!-- 일번회원가입 추가입력 폼 팝업 -->
+        <div class="popup-card join-individual-extra-form">
+            <form action="main.html" method="GET" class="login join-business">
+                <h1 class="join-title">일반 회원가입</h1>
+                <span class="profile-text">프로필 이미지</span>
+                <div class="join-sub">
+                    <!--로고 이미지-->
+                    <div class="profile-outer">
+                        <div class="profile-inner">
+                            <img class="profile-img" width="60px" height="60px" src="https://t1.daumcdn.net/cfile/tistory/997607385E69770E19">
+                            <span class="profile-img-name">profile.png</span>
+                            <button class="profile-upload-btn">upload</button>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="join-holder">    
+                    <!-- 구분선 -->
+                    <div class="line"></div> 
+                    <div style="clear:both"></div>   
+                    
+                    <div style="clear:both"></div>
+                    <label for="">휴대폰 번호</label>
+                    <input class="join-input holder" type="text" placeholder="010-0000-0000">
+                    <label for="">간단 소개</label>
+                    <textarea class="join-input holder" placeholder="입력" rows=5></textarea>
+                    <label for="">Git 저장소 주소</label>
+                    <input class="join-input holder" type="text" placeholder="https://git.com">
+                     <!-- 구분선 -->
+                     <div class="line"></div> 
+                    <label for="">주요 기술<span class="sm-grey">3개</span><button type="button" class="popTechBtn" onclick="showTech()"></button></label>
+                    <button class="btn dark" type="button">Java</button>
+                    <button class="btn dark" type="button">Spring</button>
+                    <button class="btn dark" type="button">MyBatis</button>
+                    <label for="">기술 태그<span class="sm-grey">3개</span></label>
+                    <button class="btn lightgrey" type="button">CSS</button>
+                    <button class="btn lightgrey" type="button">HTML</button>
+                    <button class="btn lightgrey" type="button">JavaScript</button>
+                    <!-- 구분선 -->
+                    <div class="line"></div> 
+                    <label for="">희망 직군</label>
+                    <input type="radio" name="job-group" value="서버/백엔드"><span class="btn lightgrey">서버/백엔드</span>
+                    <input type="radio" name="job-group" value="프론트엔드"><span class="btn lightgrey">프론트엔드</span>
+                    <div class="join-confirm">
+                        <input class="join-btn btn" type="submit" value="완료하기">
+                    </div>
+                </div>
+            </form>
+    
+            <!-- 주요 기술 팝업 -->
+            <div class="popTech" id="popTech">
+                <div class="popTechBg"></div>
+                <div class="popTechFg">
+                    <h1>주요기술</h1>
+                    <div class="tech-text">자신 있는 기술을 최대 3개 선택하세요.</div>
+                    <div class="tech-component">
+                        <input type="checkbox" name="tech-group" value="CSS"><span class="btn lightgrey btnlabel">CSS</span>     
+                        <input type="checkbox" name="tech-group" value="HTML"><span class="btn lightgrey btnlabel">HTML</span> 
+                        <input type="checkbox" name="tech-group" value="JAVA"><span class="btn lightgrey btnlabel">JAVA</span> <br>
+                        <input type="checkbox" name="tech-group" value="JavaScript"><span class="btn lightgrey btnlabel">JavaScript</span> 
+                        <input type="checkbox" name="tech-group" value="Spring"><span class="btn lightgrey btnlabel">Spring</span> 
+                        <input type="checkbox" name="tech-group" value="MyBatis"><span class="btn lightgrey btnlabel">MyBatis</span> 
+                    </div>
+                    <div class="tech-text">그 밖의 기술 등록</div>
+                    <input type="text" name="tech-group-etc" class="tech-group-etc" >
+                    <div class="join-confirm">
+                        <input class="sub-admit-btn" type="button" onclick="javascript:subAdmit()" value="등록">
+                        <input class="sub-cancel-btn" type="button" onclick="javascript:subCancel()" value="취소">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 기업회원 로그인 -->
+        <div class="popup-card login-com-form">
+            <form action="" method="GET" class="login-business join">
+                <h1 class="join-title">기업회원 로그인</h1>
+             
+                <div class="join-holder">
+                    <!-- 구분선 -->
+                    <div class="line"></div> 
+                    <div style="clear:both"></div>
+                   
+                    <label for="">이메일</label>
+                    <input class="join-input holder" type="text" placeholder="이메일">
+                    <label for="">비밀번호<a href="login_pw_reset.html"><span class="pwReset"><small>비밀번호 재설정</small></span></a> </label>
+                    <input class="join-input holder" type="text" placeholder="비밀번호">
+                   
+                    
+                    <div class="mkAccCheck">
+                        <span class="mkAccText">아직 계정이 없으신가요?</span><span class="mkAccBtn"><a href="join_business.html">계정만들기 ></a></span>
+                    </div>
+                  
+                    <div class="join-confirm">
+                        <input class="join-btn btn" type="submit" value="이메일 로그인">
+                        <div class="cookieCfm">
+                            <input type="checkbox" id="term_2">
+                            <label for="term_2">
+                                <small>로그인 상태 유지</small>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="join-text">
+                    <a href=""><small>이용약관</small></a> |
+                    <a href=""><small>개인정보 처리방침</small></a> |
+                    <a href=""><small>FAQ / 문의</small></a>
+                </div>
+                <div class="join-text">
+                    <a href="#" onclick="javascript:showPwAlert()" style="color:red;">비밀번호 경고</a>
+                </div>
+            </form>
+    
+             <!-- 비밀번호 오류 팝업 -->
+             <div class="popPwAlert" id="popPwAlert">
+                <div class="popPwAlertBg"></div>
+                <div class="popPwAlertFg">
+                    <div class="join-confirm">
+                        <div class="pwAlertText">비밀번호를 n회 실패하셨습니다.<br>다시 입력해 주세요</div>
+                        <div class="pwAlertTextRed">10회 실패하실 경우 1시간 잠금 상태가 됩니다.</div>
+                    </div>
+                    <div class="join-confirm">
+                        <input class="join-btn" type="button" onclick="javascript:subPwAdmit()" value="확인">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 일반회원 로그인 -->
+        <div class="popup-card login-individual-form">
+            <form action="" method="GET" class="login-person join">
+                <h1 class="join-title">로그인</h1>
+                <div class="join-sub">
+                    <button class="join-input google" >
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" class="abcRioButtonSvg google-logo">
+                            <g>
+                                <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                                <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                                <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                                <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                                <path fill="none" d="M0 0h48v48H0z"></path>
+                            </g>
+                        </svg> 
+                        <span class="logo-text">Google로 계속하기</span>
+                    </button>
+                    <div style="clear:both"></div>
+                    <button class="join-input github">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="github-logo">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span class="logo-text github-text">Github로 계속하기</span>
+                    </button>
+                    <div style="clear:both"></div>
+                </div>
+                <div class="join-holder">
+                    <!-- 구분선 -->
+                    <div class="line"></div> 
+                    <div style="clear:both"></div>
+                   
+                    <label for="">이메일</label>
+                    <input class="join-input holder" type="text" placeholder="이메일">
+                    <label for="">비밀번호<a href="login_pw_reset.html"><span class="pwReset"><small>비밀번호 재설정</small></span></a> </label>
+                    <input class="join-input holder" type="text" placeholder="비밀번호">
+                   
+                    
+                    <div class="mkAccCheck">
+                        <span class="mkAccText">아직 계정이 없으신가요?</span><span class="mkAccBtn"><a href="join_person.html">계정만들기 ></a></span>
+                    </div>
+                  
+                    <div class="join-confirm">
+                        <input class="join-btn" type="submit" value="이메일 로그인">
+                        <div class="cookieCfm">
+                            <input type="checkbox" id="term_2">
+                            <label for="term_2">
+                                <small>로그인 상태 유지</small>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="join-text">
+                    <a href=""><small>이용약관</small></a> |
+                    <a href=""><small>개인정보 처리방침</small></a> |
+                    <a href=""><small>FAQ / 문의</small></a>
+                </div>
+                <div class="join-text">
+                    <a href="#" onclick="javascript:showPwAlert()" style="color:red;">비밀번호 경고</a>
                 </div>
             </form>
         </div>
