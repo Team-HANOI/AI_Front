@@ -1,11 +1,21 @@
 const nav = document.querySelector('.nav')
 
-// 스크롤링 색 변환 효과
+// 스크롤 다운 효과
+const sun = document.querySelector('.sun')
 window.addEventListener('scroll', () => {
+    // 헤더 색 변환
     if (window.scrollY > nav.getBoundingClientRect().bottom) {
         nav.classList.add('down')
     } else {
         nav.classList.remove('down')
+    }
+
+    // 태양 숨김
+    if (window.scrollY > 450) {
+        sun.style.opacity = '0'
+        sun.style.animation = 'none'
+    } else {
+        sun.style.opacity = '1'
     }
 })
 

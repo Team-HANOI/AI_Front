@@ -21,13 +21,12 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: lightcyan;
 }
 
 .board-menu ul a li {
     height: 70px;
     width: 90%;
-    background-color: lightblue;
+
     margin-bottom: 5px;
     margin: 0 auto;
     display: flex;
@@ -37,7 +36,6 @@
 }
 
 .board {
-    background-color: lightcyan;
     margin: 0 10px;
 }
 
@@ -75,7 +73,6 @@
 }
 
 .item {
-    background-color: lightblue;
     border-radius: 5px;
 }
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Comfortaa:wght@700&family=Do+Hyeon&family=Gowun+Dodum&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Comfortaa:wght@700&family=Do+Hyeon&family=Gowun+Dodum&family=Permanent+Marker&family=Noto+Sans+KR:wght@100;300;400;500;900&display=swap');
 
 :root {
     --ft-color-black: #000;
@@ -338,6 +338,40 @@ main {
     }
 }
 
+/* 태양효과 */
+.sun {
+    position: fixed;
+    top: 20px;
+    transition: 1S linear;
+    animation: fadeIn 5s linear forwards;
+}
+
+.sun img {
+    animation: glow 10s linear infinite;
+    
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    50% {
+        opacity: .6;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+/* 메인 행 스타일 */
 .row {
     min-height: 500px;
     width: 100%;
@@ -470,7 +504,7 @@ footer p {
     /* color: #D5ECC2; */
 }
 
-/* --- 화면에 공통으로 사용되는 스타일들 --- */
+/* **--- 화면에 공통으로 사용되는 스타일들 --- */
 
 /* 게시판 스타일 */
 .board {
@@ -623,5 +657,11 @@ input[type="text"]:focus {
     text-decoration: none;
     outline: none;
 }
+
+/* 페이지 로딩 */
+body {
+    animation: fadeIn 1s linear;
+}
+
 
 
