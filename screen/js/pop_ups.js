@@ -1,7 +1,7 @@
 // 폼 작성완료 메시지 효과
 const submit = document.querySelector('.login-btn')
 if (submit) {
-    submit.addEventListener('click', () => {
+    submit.addEventListener('click', (e) => {
         e.preventDefault()
         document.body.classList.add('complete')
     })
