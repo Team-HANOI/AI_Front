@@ -27,7 +27,7 @@ if (joinCom) {
 }
 
 // 개인회원 가입 팝업효과
-const joinIndividua = document.querySelector('.ttest')
+const joinIndividua = document.querySelector('.join-individual')
 if (joinIndividua) {
     joinIndividua.addEventListener('click', () => {
         document.body.classList.add('show-join-indi-popup')
