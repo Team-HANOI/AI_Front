@@ -8,11 +8,13 @@ if (submit) {
 }
 
 // 키워드 팝업효과
-const keywordPopup = document.querySelector('.keyword-popup')
-if (keywordPopup) {
-    keywordPopup.addEventListener('click', () => {
-        document.body.classList.add('show-keyword-popup')
-    })
+const keywordPopups = document.querySelectorAll('.keyword-popup')
+if (keywordPopups) {
+    keywordPopups.forEach(keywordPopup => {
+        keywordPopup.addEventListener('click', () => {
+            document.body.classList.add('show-keyword-popup')
+        })
+    });
 }
 
 // 기업회원 가입 팝업효과
