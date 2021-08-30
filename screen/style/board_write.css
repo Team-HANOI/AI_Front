@@ -21,7 +21,6 @@
 .write input {
     height: 30px;
     width: 100%;
-    padding-left: 10px;
     border: none;
     border-bottom: 1px solid #000;
 }

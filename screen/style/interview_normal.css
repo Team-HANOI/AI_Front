@@ -41,10 +41,6 @@
     background-color: #EEEEEE;
 }
 
-.interview input {
-    border: none;
-}
-
 .interview-time {
     position: absolute;
     top: 0;
