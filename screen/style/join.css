@@ -183,15 +183,6 @@ a, a:hover a:visited{
     box-shadow: 1px 1px 1px dimgray;
 }
 
-.btn {
-    padding: 5px 10px;
-    border-radius: 20px;
-    border:none;
-    font-size:12px;
-    font-weight:400;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
 .dark{
     color : #fff;
     background-color: dimgray;
