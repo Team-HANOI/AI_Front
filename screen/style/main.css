@@ -633,6 +633,7 @@ footer p {
     border: none;
 }
 
+/* 버튼 스타일 */
 .btn {
     border-radius: 5px;
     cursor: pointer;
@@ -646,6 +647,21 @@ footer p {
 
 .btn:focus {
     text-decoration: none;
+}
+
+
+/* 입력란 스타일 */
+input {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #B2B1B9;
 }
 
 /* 타이틀 더미 */
