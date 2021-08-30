@@ -1,6 +1,6 @@
 /* 채용공고 작성하기 */
 
-.login {
+.mentor-form {
     width: 100%;
     background-color: #fff;
     border-radius: 15px;
@@ -54,7 +54,7 @@
 }
 
 .login-btn {
-    width: 50%;
+    width: 50% !important;
     border: 2px solid #000;
     margin: 15px 0;
     border-radius: 5px;
