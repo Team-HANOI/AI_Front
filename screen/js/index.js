@@ -74,3 +74,11 @@ navBoxes.forEach(navBox => {
         });
     })
 });
+
+// copyright 날짜
+const copyDate = document.querySelector('.copyright-date')
+const date = new Date()
+copyDate.innerHTML = date.getFullYear() + '. ' 
+                    + date.getMonth() + '. ' + 
+                    date.getDay() + '.'
+

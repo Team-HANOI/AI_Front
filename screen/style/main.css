@@ -37,7 +37,8 @@ body {
 }
 
 main {
-    font-family: 'Noto Sans KR', sans-serif; 
+    font-family: 'Noto Sans KR', sans-serif;
+    
 }
 
 /* 머리말 스타일 */
@@ -341,9 +342,10 @@ main {
 /* 태양효과 */
 .sun {
     position: fixed;
-    top: 20px;
+    top: 30px;
     transition: 1S linear;
     animation: fadeIn 5s linear forwards;
+    z-index: 1;
 }
 
 .sun img {
