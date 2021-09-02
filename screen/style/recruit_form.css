@@ -10,6 +10,10 @@
     justify-content: center;
 }
 
+.mentor-form textarea {
+
+}
+
 .join-title {
 	width: 100%;
 	text-align: left;
@@ -36,6 +40,15 @@
 
 .post_page-sub-box input[type=date] {
     width: 40%;
+}
+
+.post_page-sub-box input[type=time] {
+    width: 18.5%;
+}
+
+
+.post_page-sub-box input[type=date] + input[type=time] {
+    margin-left: 10px;
 }
 
 .post_page-sub-box .from-to {
@@ -90,6 +103,8 @@
 }
 
 textarea {
+    height: 250px;
+    width: 100%;
     border-radius: 5px;
     padding: 5px 0 0 10px;
     font-size: 1.2rem;
