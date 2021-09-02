@@ -82,3 +82,5 @@ copyDate.innerHTML = date.getFullYear() + '. '
                     + date.getMonth() + '. ' + 
                     date.getDay() + '.'
 
+
+
