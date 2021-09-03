@@ -84,3 +84,12 @@ copyDate.innerHTML = date.getFullYear() + '. '
 
 
 
+                    const submits = document.querySelector('.apply')
+                    if (submit) {
+                        submits.forEach(submit => {
+                            submit.addEventListener('click', (e) => {
+                                e.preventDefault()
+                                document.body.classList.add('complete')
+                            })
+                        });
+                    }
