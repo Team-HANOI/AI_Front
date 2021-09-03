@@ -90,4 +90,16 @@ function subPwCancel(){
     document.getElementById("popPwAlert").style.display='none';
 }
 
+const pwSearches = document.querySelectorAll('.pw-search')
+if (pwSearches) {
+    pwSearches.forEach(pwSearch => {
+        pwSearch.addEventListener('click', () => {
+            document.body.className = ''
+            setTimeout(() => {
+                document.body.classList.add('show-search-popup')    
+            }, 1000);
+        })
+    });
+}
+
 
