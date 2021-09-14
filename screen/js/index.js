@@ -78,18 +78,16 @@ navBoxes.forEach(navBox => {
 // copyright 날짜
 const copyDate = document.querySelector('.copyright-date')
 const date = new Date()
-copyDate.innerHTML = date.getFullYear() + '. ' 
-                    + date.getMonth() + '. ' + 
-                    date.getDay() + '.'
-
-
-
-                    const submits = document.querySelector('.apply')
-                    if (submit) {
-                        submits.forEach(submit => {
-                            submit.addEventListener('click', (e) => {
-                                e.preventDefault()
-                                document.body.classList.add('complete')
-                            })
-                        });
-                    }
+copyDate.innerHTML = 
+    date.getFullYear() + '. ' 
+    + date.getMonth() + '. ' + 
+    date.getDay() + '.'
+    const submits = document.querySelector('.apply')
+        if (submit) {
+            submits.forEach(submit => {
+                submit.addEventListener('click', (e) => {
+                e.preventDefault()
+                document.body.classList.add('complete')
+                })
+            });
+        }
